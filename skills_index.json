@@ -3924,6 +3924,15 @@
     "source": "https://github.com/playwright-community/playwright-go"
   },
   {
+    "id": "go-rod-master",
+    "path": "skills/go-rod-master",
+    "category": "uncategorized",
+    "name": "go-rod-master",
+    "description": "Comprehensive guide for browser automation and web scraping with go-rod (Chrome DevTools Protocol) including stealth anti-bot-detection patterns.",
+    "risk": "safe",
+    "source": "https://github.com/go-rod/rod"
+  },
+  {
     "id": "godot-gdscript-patterns",
     "path": "skills/godot-gdscript-patterns",
     "category": "uncategorized",
