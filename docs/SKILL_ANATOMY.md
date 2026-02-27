@@ -62,7 +62,7 @@ description: "Brief description of what this skill does"
 
 - **What it is:** One-sentence summary
 - **Format:** String in quotes
-- **Length:** Keep it under 150 characters
+- **Length:** Keep it under 200 characters (validator enforces this)
 - **Example:** `"Stripe payment integration patterns including checkout, subscriptions, and webhooks"`
 
 ### Optional Fields
@@ -76,8 +76,18 @@ description: "Brief description"
 risk: "safe" # none | safe | critical | offensive (see QUALITY_BAR.md)
 source: "community"
 tags: ["react", "typescript"]
+date_added: "2024-01-15"
 ---
 ```
+
+#### `date_added`
+
+- **What it is:** The date when the skill was created or added to the collection
+- **Format:** `YYYY-MM-DD` (ISO 8601 date format)
+- **Purpose:** Helps track skill versioning and community contributions
+- **Required:** No (optional, but recommended)
+- **Example:** `date_added: "2024-01-15"`
+- **Note:** Can be managed automatically with the `scripts/manage_skill_dates.py` script
 
 ---
 

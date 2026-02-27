@@ -1,9 +1,10 @@
 ---
 name: docker-expert
-description: Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Docker Compose orchestration, and production deployment patterns. Use PROACTIVELY for Dockerfile optimization, container issues, image size problems, security hardening, networking, and orchestration challenges.
+description: "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Docker Compose orchestration, and production deployment patterns. Use PROACTIVELY f..."
 category: devops
-color: blue
-displayName: Docker Expert
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Docker Expert
@@ -407,3 +408,6 @@ When reviewing Docker configurations, focus on:
 - Define security baselines for production orchestration
 
 I provide comprehensive Docker containerization expertise with focus on practical optimization, security hardening, and production-ready patterns. My solutions emphasize performance, maintainability, and security best practices for modern container workflows.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -1,7 +1,9 @@
 ---
 name: vr-ar
-description: VR/AR development principles. Comfort, interaction, performance requirements.
-allowed-tools: Read, Write, Edit, Glob, Grep
+description: "VR/AR development principles. Comfort, interaction, performance requirements."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # VR/AR Development
@@ -121,3 +123,6 @@ allowed-tools: Read, Write, Edit, Glob, Grep
 ---
 
 > **Remember:** Comfort is not optional. Sick players don't play.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

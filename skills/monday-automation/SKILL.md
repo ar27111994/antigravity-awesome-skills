@@ -1,8 +1,9 @@
 ---
 name: monday-automation
 description: "Automate Monday.com work management including boards, items, columns, groups, subitems, and updates via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Monday.com Automation via Rube MCP
@@ -231,3 +232,6 @@ Different column types require different value formats:
 | List subitems | `MONDAY_LIST_SUBITEMS_BY_PARENT` | `parent_item_ids` |
 | Add comment/update | `MONDAY_CREATE_UPDATE` | `item_id`, `body` |
 | Raw GraphQL mutation | `MONDAY_CREATE_OBJECT` | `query`, `variables` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

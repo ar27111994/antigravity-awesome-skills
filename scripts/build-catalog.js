@@ -480,6 +480,11 @@ function buildTriggers(skill, tags) {
   return unique([...tags, ...tokens]).slice(0, 12);
 }
 
+/** Common typo aliases (e.g. em dash — instead of hyphen -) for skill lookup. */
+const TYPO_ALIASES = {
+  "shopify—development": "shopify-development",
+};
+
 function buildAliases(skills) {
   const existingIds = new Set(skills.map((skill) => skill.id));
   const aliases = {};
@@ -516,6 +521,12 @@ function buildAliases(skills) {
 
     aliases[alias] = skill.id;
     used.add(alias);
+  }
+
+  for (const [typo, canonicalId] of Object.entries(TYPO_ALIASES)) {
+    if (existingIds.has(canonicalId) && !aliases[typo]) {
+      aliases[typo] = canonicalId;
+    }
   }
 
   return aliases;

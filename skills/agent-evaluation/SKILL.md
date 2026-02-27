@@ -1,7 +1,9 @@
 ---
 name: agent-evaluation
-description: "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring—where even top agents achieve less than 50% on real-world benchmarks Use when: agent testing, agent evaluation, benchmark agents, agent reliability, test agent."
-source: vibeship-spawner-skills (Apache 2.0)
+description: "Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring\u2014where even top agents achieve less than 50% on re..."
+risk: unknown
+source: "vibeship-spawner-skills (Apache 2.0)"
+date_added: "2026-02-27"
 ---
 
 # Agent Evaluation
@@ -62,3 +64,6 @@ Actively try to break agent behavior
 ## Related Skills
 
 Works well with: `multi-agent-orchestration`, `agent-communication`, `autonomous-agents`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -211,6 +211,63 @@
           "notes": "Classify failures by root cause: selector drift, timing, environment, data."
         }
       ]
+    },
+    {
+      "id": "design-ddd-core-domain",
+      "name": "Design a DDD Core Domain",
+      "description": "Workflow to model complex domains and implement tactical and evented patterns with explicit boundaries.",
+      "category": "architecture",
+      "relatedBundles": [
+        "core-dev",
+        "ops-core"
+      ],
+      "steps": [
+        {
+          "title": "Assess DDD fit and scope",
+          "goal": "Decide if full DDD is justified and define the modeling scope.",
+          "recommendedSkills": [
+            "domain-driven-design",
+            "architecture-decision-records"
+          ],
+          "notes": "Document why DDD is needed, where to keep it lightweight, and what success looks like."
+        },
+        {
+          "title": "Create strategic model",
+          "goal": "Define subdomains, bounded contexts, and ubiquitous language.",
+          "recommendedSkills": [
+            "ddd-strategic-design"
+          ],
+          "notes": "Classify subdomains and assign ownership before making implementation decisions."
+        },
+        {
+          "title": "Map context relationships",
+          "goal": "Define context integration patterns, ownership, and translation boundaries.",
+          "recommendedSkills": [
+            "ddd-context-mapping"
+          ],
+          "notes": "Prefer explicit contracts and anti-corruption layers where domain models diverge."
+        },
+        {
+          "title": "Implement tactical model",
+          "goal": "Encode invariants with aggregates, value objects, repositories, and domain events.",
+          "recommendedSkills": [
+            "ddd-tactical-patterns",
+            "test-driven-development"
+          ],
+          "notes": "Start from invariants and transaction boundaries, not from tables or endpoints."
+        },
+        {
+          "title": "Adopt evented patterns selectively",
+          "goal": "Apply CQRS, event store, projections, and sagas only where required.",
+          "recommendedSkills": [
+            "cqrs-implementation",
+            "event-store-design",
+            "projection-patterns",
+            "saga-orchestration"
+          ],
+          "notes": "Use evented patterns where consistency and scale tradeoffs are explicit and accepted."
+        }
+      ]
     }
   ]
 }

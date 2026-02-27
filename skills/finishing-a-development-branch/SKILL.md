@@ -1,6 +1,9 @@
 ---
 name: finishing-a-development-branch
-description: Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup
+description: "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup"
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Finishing a Development Branch
@@ -198,3 +201,6 @@ git worktree remove <worktree-path>
 
 **Pairs with:**
 - **using-git-worktrees** - Cleans up worktree created by that skill
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

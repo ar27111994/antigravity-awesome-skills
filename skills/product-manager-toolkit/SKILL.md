@@ -1,6 +1,9 @@
 ---
 name: product-manager-toolkit
-description: Comprehensive toolkit for product managers including RICE prioritization, customer interview analysis, PRD templates, discovery frameworks, and go-to-market strategies. Use for feature prioritization, user research synthesis, requirement documentation, and product strategy development.
+description: "Comprehensive toolkit for product managers including RICE prioritization, customer interview analysis, PRD templates, discovery frameworks, and go-to-market strategies. Use for feature prioritizati..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Product Manager Toolkit
@@ -349,3 +352,6 @@ python scripts/rice_prioritizer.py sample
 python scripts/rice_prioritizer.py features.csv --output json
 python scripts/customer_interview_analyzer.py interview.txt json
 ```
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -1,8 +1,9 @@
 ---
 name: beautiful-prose
 description: "Hard-edged writing style contract for timeless, forceful English prose without AI tics"
-source: "https://github.com/SHADOWPR0/beautiful_prose"
 risk: safe
+source: "https://github.com/SHADOWPR0/beautiful_prose"
+date_added: "2026-02-27"
 ---
 
 # Beautiful Prose

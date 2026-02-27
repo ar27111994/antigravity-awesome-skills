@@ -1,8 +1,9 @@
 ---
 name: multi-agent-patterns
 description: "Master orchestrator, peer-to-peer, and hierarchical multi-agent architectures"
-source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/multi-agent-patterns"
 risk: safe
+source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/multi-agent-patterns"
+date_added: "2026-02-27"
 ---
 
 ## When to Use This Skill
@@ -239,7 +240,7 @@ This skill builds on context-fundamentals and context-degradation. It connects t
 ## References
 
 Internal reference:
-- [Frameworks Reference](./references/frameworks.md) - Detailed framework implementation patterns
+- Frameworks Reference - Detailed framework implementation patterns
 
 Related skills in this collection:
 - context-fundamentals - Context basics

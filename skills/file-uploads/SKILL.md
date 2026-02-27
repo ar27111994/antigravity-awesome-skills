@@ -1,7 +1,9 @@
 ---
 name: file-uploads
-description: "Expert at handling file uploads and cloud storage. Covers S3, Cloudflare R2, presigned URLs, multipart uploads, and image optimization. Knows how to handle large files without blocking. Use when: file upload, S3, R2, presigned URL, multipart."
-source: vibeship-spawner-skills (Apache 2.0)
+description: "Expert at handling file uploads and cloud storage. Covers S3, Cloudflare R2, presigned URLs, multipart uploads, and image optimization. Knows how to handle large files without blocking. Use when: f..."
+risk: unknown
+source: "vibeship-spawner-skills (Apache 2.0)"
+date_added: "2026-02-27"
 ---
 
 # File Uploads & Storage
@@ -20,3 +22,6 @@ Prefers presigned URLs over server proxying.
 | No upload size restrictions | high | # SET SIZE LIMITS |
 | User-controlled filename allows path traversal | critical | # SANITIZE FILENAMES |
 | Presigned URL shared or cached incorrectly | medium | # CONTROL PRESIGNED URL DISTRIBUTION |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -1,9 +1,9 @@
 ---
 name: azure-ai-ml-py
 description: |
-  Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jobs, models, datasets, compute, and pipelines.
-  Triggers: "azure-ai-ml", "MLClient", "workspace", "model registry", "training jobs", "datasets".
-package: azure-ai-ml
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure Machine Learning SDK v2 for Python
@@ -269,3 +269,6 @@ print(f"Default: {default_ds.name}")
 5. **Register models** after successful training jobs
 6. **Use pipelines** for multi-step workflows
 7. **Tag resources** for organization and cost tracking
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

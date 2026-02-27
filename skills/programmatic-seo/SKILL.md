@@ -1,12 +1,9 @@
 ---
 name: programmatic-seo
 description: >
-  Design and evaluate programmatic SEO strategies for creating SEO-driven pages
-  at scale using templates and structured data. Use when the user mentions
-  programmatic SEO, pages at scale, template pages, directory pages, location pages,
-  comparison pages, integration pages, or keyword-pattern page generation.
-  This skill focuses on feasibility, strategy, and page system design—not execution
-  unless explicitly requested.
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 ---
@@ -349,3 +346,6 @@ If triggered, **halt indexing or roll back**:
 - **schema-markup** – Add structured data to templates
 - **copywriting** – Improve non-templated sections
 - **analytics-tracking** – Measure performance and validate value
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

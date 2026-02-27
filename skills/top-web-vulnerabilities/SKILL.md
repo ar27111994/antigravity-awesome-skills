@@ -1,9 +1,9 @@
 ---
-name: Top 100 Web Vulnerabilities Reference
-description: This skill should be used when the user asks to "identify web application vulnerabilities", "explain common security flaws", "understand vulnerability categories", "learn about injection attacks", "review access control weaknesses", "analyze API security issues", "assess security misconfigurations", "understand client-side vulnerabilities", "examine mobile and IoT security flaws", or "reference the OWASP-aligned vulnerability taxonomy". Use this skill to provide comprehensive vulnerability definitions, root causes, impacts, and mitigation strategies across all major web security categories.
-metadata:
-  author: zebbern
-  version: "1.1"
+name: top-web-vulnerabilities
+description: "This skill should be used when the user asks to \"identify web application vulnerabilities\", \"explain common security flaws\", \"understand vulnerability categories\", \"learn about inject..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Top 100 Web Vulnerabilities Reference
@@ -541,3 +541,6 @@ Permissions-Policy: geolocation=(), microphone=()
 - OWASP Application Security Verification Standard (ASVS)
 - NIST Cybersecurity Framework
 - Source: Kumar MS - Top 100 Web Vulnerabilities
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

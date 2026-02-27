@@ -5,6 +5,8 @@
 This guide details the exact procedures for maintaining `antigravity-awesome-skills`.
 It covers the **Quality Bar**, **Documentation Consistency**, and **Release Workflows**.
 
+**Maintainer shortcuts:** [Merge a PR](#b-when-you-merge-a-pr-step-by-step) · [Post-merge & contributors](#c-post-merge-routine-must-do-before-a-release) · [Close issues](#when-to-close-an-issue) · [Create a release](#4-release-workflow)
+
 ---
 
 ## 0. 🤖 Agent Protocol (THE BIBLE)
@@ -80,9 +82,27 @@ Before ANY commit that adds/modifies skills, run the chain:
     > 🔴 **CRITICAL**: If you skip this, CI will fail with "Detected uncommitted changes".
     > See [docs/CI_DRIFT_FIX.md](../docs/CI_DRIFT_FIX.md) for details.
 
-### B. Post-Merge Routine (Must Do)
+### B. When You Merge a PR (Step-by-Step)
 
-After multiple PR merges or significant changes:
+**Before merging:**
+
+1.  **CI is green** — All Validation Chain and catalog steps passed (see [workflows/ci.yml](workflows/ci.yml)).
+2.  **No drift** — PR does not introduce uncommitted generated-file changes; if the "Check for Uncommitted Drift" step failed, ask the author to run `npm run chain` and `npm run catalog` and commit the result.
+3.  **Quality Bar** — PR description confirms the [Quality Bar Checklist](.github/PULL_REQUEST_TEMPLATE.md) (metadata, risk label, credits if applicable).
+4.  **Issue link** — If the PR fixes an issue, the PR description should contain `Closes #N` or `Fixes #N` so GitHub auto-closes the issue on merge.
+
+**Right after merging:**
+
+1.  **If the PR had `Closes #N`** — The issue is closed automatically; no extra action.
+2.  **If an issue was fixed but not linked** — Close it manually and add a comment, e.g.:
+    ```text
+    Fixed in #<PR_NUMBER>. Shipped in release vX.Y.Z.
+    ```
+3.  **Single PR or small batch** — Optionally run the full Post-Merge Routine below. For a single, trivial PR you can defer it to the next release prep.
+
+### C. Post-Merge Routine (Must Do Before a Release)
+
+After you have merged several PRs or before cutting a release:
 
 1.  **Sync Contributors List**:
     - Run: `git shortlog -sn --all`
@@ -92,10 +112,7 @@ After multiple PR merges or significant changes:
     - Ensure all new headers have clean anchors.
     - **NO EMOJIS** in H2 headers.
 
-3.  **Draft a Release**:
-    - Go to [Releases Page](https://github.com/sickn33/antigravity-awesome-skills/releases).
-    - Draft a new release for the merged changes.
-    - Tag version (e.g., `v4.1.0`).
+3.  **Prepare for release** — Draft the release and tag when ready (see [§4 Release Workflow](#4-release-workflow) below).
 
 ---
 
@@ -187,7 +204,12 @@ Reject any PR that fails this:
 
 ## 4. 🚀 Release Workflow
 
-When cutting a new version (e.g., V4):
+When cutting a new version (e.g., v4.1.0):
+
+**Release checklist (order matters):**  
+Validate → Changelog → Bump `package.json` (and README if needed) → Commit & push → Create GitHub Release with tag **matching** `package.json` (e.g. `v4.1.0` ↔ `"version": "4.1.0"`) → npm publish (manual or via CI) → Close any remaining linked issues.
+
+---
 
 1.  **Run Full Validation**: `python3 scripts/validate_skills.py --strict`
 2.  **Update Changelog**: Add the new release section to `CHANGELOG.md`.
@@ -202,11 +224,14 @@ When cutting a new version (e.g., V4):
     Use the GitHub CLI:
 
     ```bash
-    # This creates the tag AND the release page automatically
+    # Prepare release notes (copy the new section from CHANGELOG.md into release_notes.md, or use CHANGELOG excerpt)
+    # Then create the tag AND the release page (tag must match package.json version, e.g. v4.1.0)
     gh release create v4.0.0 --title "v4.0.0 - [Theme Name]" --notes-file release_notes.md
     ```
 
-    _Or manually via the GitHub UI > Releases > Draft a new release._
+    **Important:** The release tag (e.g. `v4.1.0`) must match `package.json`'s `"version": "4.1.0"`. The [Publish to npm](workflows/publish-npm.yml) workflow runs on **Release published** and will run `npm publish`; npm rejects republishing the same version.
+
+    _Or create the release manually via GitHub UI > Releases > Draft a new release, then publish._
 
 5.  **Publish to npm** (so `npx antigravity-awesome-skills` works):
     - **Option A (manual):** From repo root, with npm logged in and 2FA/token set up:
@@ -217,8 +242,19 @@ When cutting a new version (e.g., V4):
     - **Option B (CI):** On GitHub, create a **Release** (tag e.g. `v4.6.1`). The workflow [Publish to npm](.github/workflows/publish-npm.yml) runs on **Release published** and runs `npm publish` if the repo secret `NPM_TOKEN` is set (npm → Access Tokens → Granular token with Publish, then add as repo secret `NPM_TOKEN`).
 
 6.  **Close linked issue(s)**:
-    - If the release completes an issue scope (feature/fix), close it with `gh issue close <id> --comment "..."`
-    - Include release tag reference in the closing note when applicable.
+    - Issues that had `Closes #N` / `Fixes #N` in a merged PR are already closed.
+    - For any issue that was fixed by the release but not auto-closed, close it manually and add a comment, e.g.:
+      ```bash
+      gh issue close <ID> --comment "Shipped in vX.Y.Z. See CHANGELOG.md and release notes."
+      ```
+
+### When to Close an Issue
+
+| Situation | Action |
+|-----------|--------|
+| PR merges and PR body contains `Closes #N` or `Fixes #N` | GitHub closes the issue automatically. |
+| PR merges but did not reference the issue | After merge, close manually: `gh issue close N --comment "Fixed in #<PR>. Shipped in vX.Y.Z."` |
+| Fix/feature shipped in a release, no PR referenced | Close with: `gh issue close N --comment "Shipped in vX.Y.Z. See CHANGELOG."` |
 
 ### 📋 Changelog Entry Template
 
@@ -271,3 +307,9 @@ If a skill is found to be harmful or broken:
 1.  **Move to broken folder** (don't detect): `mv skills/bad-skill skills/.broken/`
 2.  **Or Add Warning**: Add `> [!WARNING]` to the top of `SKILL.md`.
 3.  **Push Immediately**.
+
+---
+
+## 6. 📁 Data directory note
+
+`data/package.json` exists for historical reasons; the build and catalog scripts run from the repo root and use root `node_modules`. You can ignore or remove `data/package.json` and `data/node_modules` if present.

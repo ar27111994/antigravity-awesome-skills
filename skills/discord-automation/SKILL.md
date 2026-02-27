@@ -1,8 +1,9 @@
 ---
 name: discord-automation
 description: "Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, reactions. Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Discord Automation via Rube MCP
@@ -185,3 +186,6 @@ Permissions are combined using bitwise OR:
 | Clear reactions | DISCORDBOT_DELETE_ALL_MESSAGE_REACTIONS | channel_id, message_id |
 | Test auth | DISCORDBOT_TEST_AUTH | (none) |
 | Get channel | DISCORDBOT_GET_CHANNEL | channel_id |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

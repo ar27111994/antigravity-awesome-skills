@@ -1,6 +1,9 @@
 ---
 name: performance-testing-review-multi-agent-review
 description: "Use when working with performance testing review multi agent review"
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Multi-Agent Code Review Orchestration Tool

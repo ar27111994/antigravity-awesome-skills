@@ -1,8 +1,9 @@
 ---
 name: bitbucket-automation
 description: "Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Bitbucket Automation via Rube MCP
@@ -222,3 +223,6 @@ Bitbucket Query Language is available on list endpoints:
 | Comment on issue | `BITBUCKET_CREATE_ISSUE_COMMENT` | `workspace`, `repo_slug`, `issue_id`, `content` |
 | Delete issue | `BITBUCKET_DELETE_ISSUE` | `workspace`, `repo_slug`, `issue_id` |
 | List members | `BITBUCKET_LIST_WORKSPACE_MEMBERS` | `workspace` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

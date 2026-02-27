@@ -1,7 +1,9 @@
 ---
 name: azure-search-documents-ts
-description: Build search applications using Azure AI Search SDK for JavaScript (@azure/search-documents). Use when creating/managing indexes, implementing vector/hybrid search, semantic ranking, or building agentic retrieval with knowledge bases.
-package: @azure/search-documents
+description: "Build search applications using Azure AI Search SDK for JavaScript (@azure/search-documents). Use when creating/managing indexes, implementing vector/hybrid search, semantic ranking, or building ag..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure AI Search SDK for TypeScript
@@ -264,3 +266,6 @@ import {
 4. **Use filters for security** - Implement document-level security with filters
 5. **Index incrementally** - Use `mergeOrUploadDocuments` for updates
 6. **Monitor query performance** - Use `includeTotalCount: true` sparingly in production
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

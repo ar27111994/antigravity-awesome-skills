@@ -1,8 +1,9 @@
 ---
-name: frontend-patterns
-description: Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.
-author: affaan-m
-version: "1.0"
+name: cc-skill-frontend-patterns
+description: "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Frontend Development Patterns
@@ -631,3 +632,6 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
 ```
 
 **Remember**: Modern frontend patterns enable maintainable, performant user interfaces. Choose patterns that fit your project complexity.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

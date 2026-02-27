@@ -1,8 +1,9 @@
 ---
 name: automate-whatsapp
-description: "Build WhatsApp automations with Kapso workflows: configure WhatsApp triggers, edit workflow graphs, manage executions, deploy functions, and use databases/integrations for state. Use when automating WhatsApp conversations and event handling."
-source: "https://github.com/gokapso/agent-skills/tree/master/skills/automate-whatsapp"
+description: "Build WhatsApp automations with Kapso workflows: configure WhatsApp triggers, edit workflow graphs, manage executions, deploy functions, and use databases/integrations for state. Use when automatin..."
 risk: safe
+source: "https://github.com/gokapso/agent-skills/tree/master/skills/automate-whatsapp"
+date_added: "2026-02-27"
 ---
 
 # Automate WhatsApp
@@ -211,17 +212,17 @@ node scripts/openapi-explore.mjs --spec platform op queryDatabaseRows
 ## References
 
 Read before editing:
-- [references/graph-contract.md](references/graph-contract.md) - Graph schema, computed vs editable fields, lock_version
-- [references/node-types.md](references/node-types.md) - Node types and config shapes
-- [references/workflow-overview.md](references/workflow-overview.md) - Execution flow and states
+- references/graph-contract.md - Graph schema, computed vs editable fields, lock_version
+- references/node-types.md - Node types and config shapes
+- references/workflow-overview.md - Execution flow and states
 
 Other references:
-- [references/execution-context.md](references/execution-context.md) - Context structure and variable substitution
-- [references/triggers.md](references/triggers.md) - Trigger types and setup
-- [references/app-integrations.md](references/app-integrations.md) - App integration and variable_definitions
-- [references/functions-reference.md](references/functions-reference.md) - Function management
-- [references/functions-payloads.md](references/functions-payloads.md) - Payload shapes for functions
-- [references/databases-reference.md](references/databases-reference.md) - Database operations
+- references/execution-context.md - Context structure and variable substitution
+- references/triggers.md - Trigger types and setup
+- references/app-integrations.md - App integration and variable_definitions
+- references/functions-reference.md - Function management
+- references/functions-payloads.md - Payload shapes for functions
+- references/databases-reference.md - Database operations
 
 ## Assets
 

@@ -1,7 +1,9 @@
 ---
 name: prompt-caching
-description: "Caching strategies for LLM prompts including Anthropic prompt caching, response caching, and CAG (Cache Augmented Generation) Use when: prompt caching, cache prompt, response cache, cag, cache augmented."
-source: vibeship-spawner-skills (Apache 2.0)
+description: "Caching strategies for LLM prompts including Anthropic prompt caching, response caching, and CAG (Cache Augmented Generation) Use when: prompt caching, cache prompt, response cache, cag, cache augm..."
+risk: unknown
+source: "vibeship-spawner-skills (Apache 2.0)"
+date_added: "2026-02-27"
 ---
 
 # Prompt Caching
@@ -59,3 +61,6 @@ Pre-cache documents in prompt instead of RAG retrieval
 ## Related Skills
 
 Works well with: `context-window-management`, `rag-implementation`, `conversation-memory`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

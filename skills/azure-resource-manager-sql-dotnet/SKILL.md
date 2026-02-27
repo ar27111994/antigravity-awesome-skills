@@ -1,8 +1,9 @@
 ---
 name: azure-resource-manager-sql-dotnet
 description: |
-  Azure Resource Manager SDK for Azure SQL in .NET. Use for MANAGEMENT PLANE operations: creating/managing SQL servers, databases, elastic pools, firewall rules, and failover groups via Azure Resource Manager. NOT for data plane operations (executing queries) - use Microsoft.Data.SqlClient for that. Triggers: "SQL server", "create SQL database", "manage SQL resources", "ARM SQL", "SqlServerResource", "provision Azure SQL", "elastic pool", "firewall rule".
-package: Azure.ResourceManager.Sql
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure.ResourceManager.Sql (.NET)
@@ -306,9 +307,9 @@ catch (RequestFailedException ex)
 
 | File | When to Read |
 |------|--------------|
-| [references/server-management.md](references/server-management.md) | Server CRUD, admin credentials, Azure AD auth, networking |
-| [references/database-operations.md](references/database-operations.md) | Database CRUD, scaling, backup, restore, copy |
-| [references/elastic-pools.md](references/elastic-pools.md) | Pool management, adding/removing databases, scaling |
+| references/server-management.md | Server CRUD, admin credentials, Azure AD auth, networking |
+| references/database-operations.md | Database CRUD, scaling, backup, restore, copy |
+| references/elastic-pools.md | Pool management, adding/removing databases, scaling |
 
 ## Related SDKs
 
@@ -317,3 +318,6 @@ catch (RequestFailedException ex)
 | `Microsoft.Data.SqlClient` | Data plane (execute queries, stored procedures) | `dotnet add package Microsoft.Data.SqlClient` |
 | `Azure.ResourceManager.Sql` | Management plane (this SDK) | `dotnet add package Azure.ResourceManager.Sql` |
 | `Microsoft.EntityFrameworkCore.SqlServer` | ORM for SQL Server | `dotnet add package Microsoft.EntityFrameworkCore.SqlServer` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

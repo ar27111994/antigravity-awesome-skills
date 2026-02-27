@@ -1,7 +1,9 @@
 ---
 name: nextjs-best-practices
-description: Next.js App Router principles. Server Components, data fetching, routing patterns.
-allowed-tools: Read, Write, Edit, Glob, Grep
+description: "Next.js App Router principles. Server Components, data fetching, routing patterns."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Next.js Best Practices
@@ -201,3 +203,6 @@ app/
 ---
 
 > **Remember:** Server Components are the default for a reason. Start there, add client only when needed.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

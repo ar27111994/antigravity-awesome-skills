@@ -1,9 +1,9 @@
 ---
 name: azure-mgmt-apimanagement-py
 description: |
-  Azure API Management SDK for Python. Use for managing APIM services, APIs, products, subscriptions, and policies.
-  Triggers: "azure-mgmt-apimanagement", "ApiManagementClient", "APIM", "API gateway", "API Management".
-package: azure-mgmt-apimanagement
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure API Management SDK for Python
@@ -276,3 +276,6 @@ user = client.user.create_or_update(
 4. **Enable Application Insights** for monitoring
 5. **Use backends** to abstract backend services
 6. **Version your APIs** using APIM's versioning features
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

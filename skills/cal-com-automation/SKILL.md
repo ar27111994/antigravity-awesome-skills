@@ -1,8 +1,9 @@
 ---
 name: cal-com-automation
 description: "Automate Cal.com tasks via Rube MCP (Composio): manage bookings, check availability, configure webhooks, and handle teams. Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Cal.com Automation via Rube MCP
@@ -201,3 +202,6 @@ Automate Cal.com scheduling operations through Composio's Cal toolkit via Rube M
 | Create team | CAL_CREATE_TEAM_IN_ORGANIZATION | name, slug |
 | Team event types | CAL_RETRIEVE_TEAM_EVENT_TYPES | teamId |
 | Get org ID | CAL_GET_ORGANIZATION_ID | (none) |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

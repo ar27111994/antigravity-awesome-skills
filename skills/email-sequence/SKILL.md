@@ -1,6 +1,9 @@
 ---
 name: email-sequence
-description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," or "lifecycle emails." For in-app onboarding, see onboarding-cro.
+description: "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campa..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Email Sequence Design
@@ -923,3 +926,6 @@ If you need more context:
 - **copywriting**: For landing pages emails link to
 - **ab-test-setup**: For testing email elements
 - **popup-cro**: For email capture popups
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

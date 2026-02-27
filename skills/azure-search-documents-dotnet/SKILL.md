@@ -1,8 +1,9 @@
 ---
 name: azure-search-documents-dotnet
 description: |
-  Azure AI Search SDK for .NET (Azure.Search.Documents). Use for building search applications with full-text, vector, semantic, and hybrid search. Covers SearchClient (queries, document CRUD), SearchIndexClient (index management), and SearchIndexerClient (indexers, skillsets). Triggers: "Azure Search .NET", "SearchClient", "SearchIndexClient", "vector search C#", "semantic search .NET", "hybrid search", "Azure.Search.Documents".
-package: Azure.Search.Documents
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure.Search.Documents (.NET)
@@ -207,7 +208,7 @@ var suggestions = await searchClient.SuggestAsync<Hotel>("lux", "suggester-name"
 
 ## Vector Search
 
-See [references/vector-search.md](references/vector-search.md) for detailed patterns.
+See references/vector-search.md for detailed patterns.
 
 ```csharp
 using Azure.Search.Documents.Models;
@@ -232,7 +233,7 @@ var results = await searchClient.SearchAsync<Hotel>(null, options);
 
 ## Semantic Search
 
-See [references/semantic-search.md](references/semantic-search.md) for detailed patterns.
+See references/semantic-search.md for detailed patterns.
 
 ```csharp
 var options = new SearchOptions
@@ -335,5 +336,8 @@ catch (RequestFailedException ex)
 
 | File | Contents |
 |------|----------|
-| [references/vector-search.md](references/vector-search.md) | Vector search, hybrid search, vectorizers |
-| [references/semantic-search.md](references/semantic-search.md) | Semantic ranking, captions, answers |
+| references/vector-search.md | Vector search, hybrid search, vectorizers |
+| references/semantic-search.md | Semantic ranking, captions, answers |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

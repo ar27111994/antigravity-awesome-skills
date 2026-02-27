@@ -1,9 +1,9 @@
 ---
-name: Shodan Reconnaissance and Pentesting
-description: This skill should be used when the user asks to "search for exposed devices on the internet," "perform Shodan reconnaissance," "find vulnerable services using Shodan," "scan IP ranges with Shodan," or "discover IoT devices and open ports." It provides comprehensive guidance for using Shodan's search engine, CLI, and API for penetration testing reconnaissance.
-metadata:
-  author: zebbern
-  version: "1.1"
+name: shodan-reconnaissance
+description: "This skill should be used when the user asks to \"search for exposed devices on the internet,\" \"perform Shodan reconnaissance,\" \"find vulnerable services using Shodan,\" \"scan IP ranges..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Shodan Reconnaissance and Pentesting
@@ -501,3 +501,6 @@ shodan download network_scan.json.gz 'net:192.168.1.0/24'
 | Rate Limit Exceeded | >1 request/second | Add `time.sleep(1)` between API requests |
 | Empty Search Results | Too specific or syntax error | Use quotes for phrases: `'org:"Company Name"'`; broaden criteria |
 | Downloaded File Won't Parse | Corrupted or wrong format | Verify with `gunzip -t file.gz`, re-download with `--limit` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

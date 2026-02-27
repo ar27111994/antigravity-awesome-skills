@@ -1,7 +1,9 @@
 ---
 name: azure-ai-translation-ts
-description: Build translation applications using Azure Translation SDKs for JavaScript (@azure-rest/ai-translation-text, @azure-rest/ai-translation-document). Use when implementing text translation, transliteration, language detection, or batch document translation.
-package: @azure-rest/ai-translation-text, @azure-rest/ai-translation-document
+description: "Build translation applications using Azure Translation SDKs for JavaScript (@azure-rest/ai-translation-text, @azure-rest/ai-translation-document). Use when implementing text translation, transliter..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure Translation SDKs for TypeScript
@@ -284,3 +286,6 @@ import type {
 3. **Use SAS tokens** - For document translation, use time-limited SAS URLs
 4. **Handle errors** - Always check `isUnexpected(response)` before accessing body
 5. **Regional endpoints** - Use regional endpoints for lower latency
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

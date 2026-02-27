@@ -169,6 +169,47 @@ Create resilient browser automation with deterministic execution in CI.
 
 ---
 
+## Workflow: Design a DDD Core Domain
+
+Model a complex domain coherently, then implement tactical and evented patterns only where justified.
+
+**Related bundles:** `Architecture & Design`, `DDD & Evented Architecture`
+
+### Prerequisites
+
+- Access to at least one domain expert or product owner proxy.
+- Current system context and integration landscape available.
+- Agreement on business goals and key domain outcomes.
+
+### Steps
+
+1. **Assess DDD fit and scope**
+   - **Goal:** Decide whether full DDD, partial DDD, or simple modular architecture is appropriate.
+   - **Skills:** [`@domain-driven-design`](../skills/domain-driven-design/), [`@architecture-decision-records`](../skills/architecture-decision-records/)
+   - **Prompt example:** `Use @domain-driven-design to evaluate if full DDD is justified for our billing and fulfillment platform.`
+
+2. **Create strategic model**
+   - **Goal:** Define subdomains, bounded contexts, and ubiquitous language.
+   - **Skills:** [`@ddd-strategic-design`](../skills/ddd-strategic-design/)
+   - **Prompt example:** `Use @ddd-strategic-design to classify subdomains and propose bounded contexts with ownership.`
+
+3. **Map context relationships**
+   - **Goal:** Define upstream/downstream contracts and anti-corruption boundaries.
+   - **Skills:** [`@ddd-context-mapping`](../skills/ddd-context-mapping/)
+   - **Prompt example:** `Use @ddd-context-mapping to model Checkout, Billing, and Inventory interactions with clear contract ownership.`
+
+4. **Implement tactical model**
+   - **Goal:** Encode invariants with aggregates, value objects, and domain events.
+   - **Skills:** [`@ddd-tactical-patterns`](../skills/ddd-tactical-patterns/), [`@test-driven-development`](../skills/test-driven-development/)
+   - **Prompt example:** `Use @ddd-tactical-patterns to design aggregates and invariants for order lifecycle transitions.`
+
+5. **Adopt evented patterns selectively**
+   - **Goal:** Apply CQRS, event store, projections, and sagas only where complexity and scale require them.
+   - **Skills:** [`@cqrs-implementation`](../skills/cqrs-implementation/), [`@event-store-design`](../skills/event-store-design/), [`@projection-patterns`](../skills/projection-patterns/), [`@saga-orchestration`](../skills/saga-orchestration/)
+   - **Prompt example:** `Use @cqrs-implementation and @projection-patterns to scale read-side reporting without compromising domain invariants.`
+
+---
+
 ## Machine-Readable Workflows
 
 For tooling and automation, workflow metadata is available in [data/workflows.json](../data/workflows.json).

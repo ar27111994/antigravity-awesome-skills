@@ -1,8 +1,9 @@
 ---
 name: context-fundamentals
 description: "Understand what context is, why it matters, and the anatomy of context in agent systems"
-source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-fundamentals"
 risk: safe
+source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-fundamentals"
+date_added: "2026-02-27"
 ---
 
 ## When to Use This Skill
@@ -171,7 +172,7 @@ This skill provides foundational context that all other skills build upon. It sh
 ## References
 
 Internal reference:
-- [Context Components Reference](./references/context-components.md) - Detailed technical reference
+- Context Components Reference - Detailed technical reference
 
 Related skills in this collection:
 - context-degradation - Understanding context failure patterns

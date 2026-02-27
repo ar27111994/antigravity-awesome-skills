@@ -1,10 +1,9 @@
 ---
 name: linear-claude-skill
 description: "Manage Linear issues, projects, and teams"
-allowed-tools: 
-- WebFetch(domain: linear.app)
-source: "https://github.com/wrsmith108/linear-claude-skill"
 risk: safe
+source: "https://github.com/wrsmith108/linear-claude-skill"
+date_added: "2026-02-27"
 ---
 
 ## When to Use This Skill
@@ -360,7 +359,7 @@ Choose the right tool for the task:
 }
 ```
 
-> **WARNING**: Do NOT use deprecated community servers. See [troubleshooting.md](troubleshooting.md) for details.
+> **WARNING**: Do NOT use deprecated community servers. See troubleshooting.md for details.
 
 ### MCP Reliability (Official Server)
 
@@ -383,7 +382,7 @@ node scripts/linear-helpers.mjs update-status Done 123 124 125
 
 ### Helper Script Reference
 
-For detailed helper script usage, see **[troubleshooting.md](troubleshooting.md)**.
+For detailed helper script usage, see **troubleshooting.md**.
 
 ### Parallel Agent Execution
 
@@ -409,7 +408,7 @@ Task({
 - Quick status checks
 - Operations needing immediate results
 
-See **[sync.md](sync.md)** for parallel execution patterns.
+See **sync.md** for parallel execution patterns.
 
 ## Critical Requirements
 
@@ -422,7 +421,7 @@ See **[sync.md](sync.md)** for parallel execution patterns.
 | Issue | Project | Not visible in project board |
 | Project | Initiative | Not visible in roadmap |
 
-See **[projects.md](projects.md)** for complete project creation checklist.
+See **projects.md** for complete project creation checklist.
 
 ---
 
@@ -435,7 +434,7 @@ See **[projects.md](projects.md)** for complete project creation checklist.
 
 ### Labels
 
-Uses **domain-based label taxonomy**. See [docs/labels.md](docs/labels.md).
+Uses **domain-based label taxonomy**. See docs/labels.md.
 
 **Key rules:**
 - ONE Type label: `feature`, `bug`, `refactor`, `chore`, `spike`
@@ -464,7 +463,7 @@ Scripts provide full type hints and are easier to debug than raw GraphQL for mul
 
 **Fallback only.** Use when operations aren't supported by MCP or SDK.
 
-See **[api.md](api.md)** for complete documentation including:
+See **api.md** for complete documentation including:
 - Authentication and setup
 - Example queries and mutations
 - Timeout handling patterns
@@ -479,7 +478,7 @@ npx tsx ~/.claude/skills/linear/scripts/query.ts "query { viewer { name } }"
 
 ## Projects & Initiatives
 
-For advanced project and initiative management patterns, see **[projects.md](projects.md)**.
+For advanced project and initiative management patterns, see **projects.md**.
 
 **Quick reference** - common project commands:
 
@@ -515,7 +514,7 @@ Manage Linear issues, projects, and teams
 Use this skill when working with manage linear issues, projects, and teams.
 ## Sync Patterns (Bulk Operations)
 
-For bulk synchronization of code changes to Linear, see **[sync.md](sync.md)**.
+For bulk synchronization of code changes to Linear, see **sync.md**.
 
 **Quick sync commands:**
 
@@ -533,11 +532,11 @@ npx tsx scripts/linear-ops.ts project-status "My Project" completed
 
 | Document | Purpose |
 |----------|---------|
-| [api.md](api.md) | GraphQL API reference, timeout handling |
-| [sdk.md](sdk.md) | SDK automation patterns |
-| [sync.md](sync.md) | Bulk sync patterns |
-| [projects.md](projects.md) | Project & initiative management |
-| [troubleshooting.md](troubleshooting.md) | Common issues, MCP debugging |
-| [docs/labels.md](docs/labels.md) | Label taxonomy |
+| api.md | GraphQL API reference, timeout handling |
+| sdk.md | SDK automation patterns |
+| sync.md | Bulk sync patterns |
+| projects.md | Project & initiative management |
+| troubleshooting.md | Common issues, MCP debugging |
+| docs/labels.md | Label taxonomy |
 
 **External:** [Linear MCP Documentation](https://linear.app/docs/mcp.md)

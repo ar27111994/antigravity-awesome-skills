@@ -1,8 +1,9 @@
 ---
 name: dropbox-automation
 description: "Automate Dropbox file management, sharing, search, uploads, downloads, and folder operations via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Dropbox Automation via Rube MCP
@@ -228,3 +229,6 @@ Several Dropbox operations run asynchronously:
 | Delete batch | `DROPBOX_DELETE_BATCH` | `entries` |
 | Copy file/folder | `DROPBOX_COPY_FILE_OR_FOLDER` | `from_path`, `to_path` |
 | Check batch status | `DROPBOX_CHECK_MOVE_BATCH` | `async_job_id` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

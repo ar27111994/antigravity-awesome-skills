@@ -1,6 +1,9 @@
 ---
 name: receiving-code-review
-description: Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
+description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performat..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Code Review Reception
@@ -211,3 +214,6 @@ When replying to inline review comments on GitHub, reply in the comment thread (
 Verify. Question. Then implement.
 
 No performative agreement. Technical rigor always.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

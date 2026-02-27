@@ -1,8 +1,9 @@
 ---
 name: n8n-mcp-tools-expert
-description: "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns."
-source: "https://github.com/czlonkowski/n8n-skills/tree/main/skills/n8n-mcp-tools-expert"
+description: "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool sele..."
 risk: safe
+source: "https://github.com/czlonkowski/n8n-skills/tree/main/skills/n8n-mcp-tools-expert"
+date_added: "2026-02-27"
 ---
 
 # n8n MCP Tools Expert
@@ -25,9 +26,9 @@ Use this skill when:
 
 n8n-mcp provides tools organized into categories:
 
-1. **Node Discovery** → [SEARCH_GUIDE.md](SEARCH_GUIDE.md)
-2. **Configuration Validation** → [VALIDATION_GUIDE.md](VALIDATION_GUIDE.md)
-3. **Workflow Management** → [WORKFLOW_GUIDE.md](WORKFLOW_GUIDE.md)
+1. **Node Discovery** → SEARCH_GUIDE.md
+2. **Configuration Validation** → VALIDATION_GUIDE.md
+3. **Workflow Management** → WORKFLOW_GUIDE.md
 4. **Template Library** - Search and deploy 2,700+ real workflows
 5. **Documentation & Guides** - Tool docs, AI agent guide, Code node guides
 
@@ -375,13 +376,13 @@ await n8n_update_partial_workflow({
 ## Detailed Guides
 
 ### Node Discovery Tools
-See [SEARCH_GUIDE.md](SEARCH_GUIDE.md) for:
+See SEARCH_GUIDE.md for:
 - search_nodes
 - get_node with detail levels (minimal, standard, full)
 - get_node modes (info, docs, search_properties, versions)
 
 ### Validation Tools
-See [VALIDATION_GUIDE.md](VALIDATION_GUIDE.md) for:
+See VALIDATION_GUIDE.md for:
 - Validation profiles explained
 - validate_node with modes (minimal, full)
 - validate_workflow complete structure
@@ -389,7 +390,7 @@ See [VALIDATION_GUIDE.md](VALIDATION_GUIDE.md) for:
 - Handling validation errors
 
 ### Workflow Management
-See [WORKFLOW_GUIDE.md](WORKFLOW_GUIDE.md) for:
+See WORKFLOW_GUIDE.md for:
 - n8n_create_workflow
 - n8n_update_partial_workflow (17 operation types!)
 - Smart parameters (branch, case)
@@ -639,9 +640,9 @@ validate_node({nodeType: "nodes-base.webhook", config: {}, mode: "minimal"})
 7. activateWorkflow → go live!
 
 For details, see:
-- [SEARCH_GUIDE.md](SEARCH_GUIDE.md) - Node discovery
-- [VALIDATION_GUIDE.md](VALIDATION_GUIDE.md) - Configuration validation
-- [WORKFLOW_GUIDE.md](WORKFLOW_GUIDE.md) - Workflow management
+- SEARCH_GUIDE.md - Node discovery
+- VALIDATION_GUIDE.md - Configuration validation
+- WORKFLOW_GUIDE.md - Workflow management
 
 ---
 

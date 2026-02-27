@@ -1,8 +1,9 @@
 ---
 name: context-degradation
 description: "Recognize patterns of context failure: lost-in-middle, poisoning, distraction, and clash"
-source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-degradation"
 risk: safe
+source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-degradation"
+date_added: "2026-02-27"
 ---
 
 ## When to Use This Skill
@@ -216,7 +217,7 @@ This skill builds on context-fundamentals and should be studied after understand
 ## References
 
 Internal reference:
-- [Degradation Patterns Reference](./references/patterns.md) - Detailed technical reference
+- Degradation Patterns Reference - Detailed technical reference
 
 Related skills in this collection:
 - context-fundamentals - Context basics

@@ -1,8 +1,9 @@
 ---
 name: reddit-automation
 description: "Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage comments, and browse top content. Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Reddit Automation via Rube MCP
@@ -190,7 +191,7 @@ t5_ = Subreddit
 **Text Formatting**:
 - Reddit uses Markdown for post and comment formatting
 - Code blocks, tables, and headers are supported
-- Links use `[text](url)` format
+- Links use `text` format
 - Mention users with `u/username`, subreddits with `r/subreddit`
 
 ## Quick Reference
@@ -210,3 +211,6 @@ t5_ = Subreddit
 | Get specific comment | REDDIT_RETRIEVE_SPECIFIC_COMMENT | comment_id |
 | List post flairs | REDDIT_LIST_SUBREDDIT_POST_FLAIRS | subreddit |
 | Get user flair | REDDIT_GET_USER_FLAIR | subreddit |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

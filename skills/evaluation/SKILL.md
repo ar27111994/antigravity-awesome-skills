@@ -1,8 +1,9 @@
 ---
 name: evaluation
 description: "Build evaluation frameworks for agent systems"
-source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation"
 risk: safe
+source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation"
+date_added: "2026-02-27"
 ---
 
 ## When to Use This Skill
@@ -216,7 +217,7 @@ This skill connects to all other skills as a cross-cutting concern:
 ## References
 
 Internal reference:
-- [Metrics Reference](./references/metrics.md) - Detailed evaluation metrics and implementation
+- Metrics Reference - Detailed evaluation metrics and implementation
 
 ## References
 

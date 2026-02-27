@@ -1,6 +1,9 @@
 ---
 name: obsidian-clipper-template-creator
-description: Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a new clipping template, understand available variables, or format clipped content.
+description: "Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a new clipping template, understand available variables, or format clipped content."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Obsidian Web Clipper Template Creator
@@ -62,3 +65,6 @@ This skill helps you create importable JSON templates for the Obsidian Web Clipp
 ## Examples
 
 See [assets/](assets/) for JSON examples.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

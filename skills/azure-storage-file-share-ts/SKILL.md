@@ -1,8 +1,9 @@
 ---
 name: azure-storage-file-share-ts
 description: |
-  Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-share) for SMB file share operations. Use for creating shares, managing directories, uploading/downloading files, and handling file metadata. Supports Azure Files SMB protocol scenarios. Triggers: "file share", "@azure/storage-file-share", "ShareServiceClient", "ShareClient", "SMB", "Azure Files".
-package: @azure/storage-file-share
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # @azure/storage-file-share (TypeScript/JavaScript)
@@ -491,3 +492,6 @@ import {
 | SAS generation | ✅ | ❌ |
 | DefaultAzureCredential | ✅ | ❌ |
 | Anonymous/SAS access | ✅ | ✅ |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

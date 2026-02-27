@@ -1,8 +1,9 @@
 ---
 name: zoom-automation
 description: "Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Zoom Automation via Rube MCP
@@ -215,3 +216,6 @@ Most Zoom list endpoints use token-based pagination:
 | Register for meeting | `ZOOM_ADD_A_MEETING_REGISTRANT` | `meetingId`, participant details |
 | Register for webinar | `ZOOM_ADD_A_WEBINAR_REGISTRANT` | webinar ID, participant details |
 | List archived files | `ZOOM_LIST_ARCHIVED_FILES` | `from`, `to` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

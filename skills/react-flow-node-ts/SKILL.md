@@ -1,6 +1,9 @@
 ---
 name: react-flow-node-ts
-description: Create React Flow node components with TypeScript types, handles, and Zustand integration. Use when building custom nodes for React Flow canvas, creating visual workflow editors, or implementing node-based UI components.
+description: "Create React Flow node components with TypeScript types, handles, and Zustand integration. Use when building custom nodes for React Flow canvas, creating visual workflow editors, or implementing no..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # React Flow Node
@@ -9,15 +12,15 @@ Create React Flow node components following established patterns with proper Typ
 
 ## Quick Start
 
-Copy templates from [assets/](assets/) and replace placeholders:
+Copy templates from assets/ and replace placeholders:
 - `{{NodeName}}` → PascalCase component name (e.g., `VideoNode`)
 - `{{nodeType}}` → kebab-case type identifier (e.g., `video-node`)
 - `{{NodeData}}` → Data interface name (e.g., `VideoNodeData`)
 
 ## Templates
 
-- [assets/template.tsx](assets/template.tsx) - Node component
-- [assets/types.template.ts](assets/types.template.ts) - TypeScript definitions
+- assets/template.tsx - Node component
+- assets/types.template.ts - TypeScript definitions
 
 ## Node Component Pattern
 
@@ -64,3 +67,6 @@ export type MyNode = Node<MyNodeData, 'my-node'>;
 4. Add defaults in `src/frontend/src/store/app-store.ts`
 5. Register in canvas `nodeTypes`
 6. Add to AddBlockMenu and ConnectMenu
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

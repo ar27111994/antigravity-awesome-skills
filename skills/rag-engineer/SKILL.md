@@ -1,7 +1,9 @@
 ---
 name: rag-engineer
-description: "Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vector databases, chunking strategies, and retrieval optimization for LLM applications. Use when: building RAG, vector search, embeddings, semantic search, document retrieval."
-source: vibeship-spawner-skills (Apache 2.0)
+description: "Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vector databases, chunking strategies, and retrieval optimization for LLM applications. Use when: building RAG, ..."
+risk: unknown
+source: "vibeship-spawner-skills (Apache 2.0)"
+date_added: "2026-02-27"
 ---
 
 # RAG Engineer
@@ -88,3 +90,6 @@ Combine semantic and keyword search
 ## Related Skills
 
 Works well with: `ai-agents-architect`, `prompt-engineer`, `database-architect`, `backend`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

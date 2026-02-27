@@ -1,11 +1,12 @@
-# 🌌 Antigravity Awesome Skills: 845+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Antigravity Awesome Skills: 950+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
 
-> **The Ultimate Collection of 845+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
+> **The Ultimate Collection of 950+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
 [![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-Google-blue)](https://github.com/google-gemini/gemini-cli)
 [![Codex CLI](https://img.shields.io/badge/Codex%20CLI-OpenAI-green)](https://github.com/openai/codex)
+[![Kiro](https://img.shields.io/badge/Kiro-AWS-orange)](https://kiro.dev)
 [![Cursor](https://img.shields.io/badge/Cursor-AI%20IDE-orange)](https://cursor.sh)
 [![Copilot](https://img.shields.io/badge/GitHub%20Copilot-VSCode-lightblue)](https://github.com/features/copilot)
 [![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray)](https://github.com/opencode-ai/opencode)
@@ -16,11 +17,13 @@
 
 If this project helps you, you can [support it here](https://buymeacoffee.com/sickn33) or simply ⭐ the repo.
 
-**Antigravity Awesome Skills** is a curated, battle-tested library of **845 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
+**Antigravity Awesome Skills** is a curated, battle-tested library of **950 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
 
 - 🟣 **Claude Code** (Anthropic CLI)
 - 🔵 **Gemini CLI** (Google DeepMind)
 - 🟢 **Codex CLI** (OpenAI)
+- 🟠 **Kiro CLI** (AWS)
+- 🟠 **Kiro IDE** (AWS)
 - 🔴 **Antigravity IDE** (Google DeepMind)
 - 🩵 **GitHub Copilot** (VSCode Extension)
 - 🟠 **Cursor** (AI-native IDE)
@@ -32,13 +35,14 @@ This repository provides essential skills to transform your AI assistant into a 
 ## Table of Contents
 
 - [🚀 New Here? Start Here!](#new-here-start-here)
+- [📖 Complete Usage Guide](docs/USAGE.md) - **Start here if confused after installation!**
 - [🔌 Compatibility & Invocation](#compatibility--invocation)
 - [🛠️ Installation](#installation)
 - [🧯 Troubleshooting](#troubleshooting)
 - [🎁 Curated Collections (Bundles)](#curated-collections)
 - [🧭 Antigravity Workflows](#antigravity-workflows)
 - [📦 Features & Categories](#features--categories)
-- [📚 Browse 845+ Skills](#browse-845-skills)
+- [📚 Browse 950+ Skills](#browse-950-skills)
 - [🤝 How to Contribute](#how-to-contribute)
 - [🤝 Community](#community)
 - [☕ Support the Project](#support-the-project)
@@ -52,11 +56,11 @@ This repository provides essential skills to transform your AI assistant into a 
 
 ## New Here? Start Here!
 
-**Welcome to the V5.0.0 Workflows Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
+**Welcome to the V6.5.0 Interactive Web Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
 
 ### 1. 🐣 Context: What is this?
 
-**Antigravity Awesome Skills** (Release 5.0.0) is a massive upgrade to your AI's capabilities.
+**Antigravity Awesome Skills** (Release 6.5.0) is a massive upgrade to your AI's capabilities.
 
 AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
 **Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
@@ -68,14 +72,14 @@ Install once; then use Starter Packs in [docs/BUNDLES.md](docs/BUNDLES.md) to fo
 1. **Install**:
 
    ```bash
-   # Default path: ~/.agent/skills
+   # Default: ~/.gemini/antigravity/skills (Antigravity global). Use --path for other locations.
    npx antigravity-awesome-skills
    ```
 
 2. **Verify**:
 
    ```bash
-   test -d ~/.agent/skills && echo "Skills installed in ~/.agent/skills"
+   test -d ~/.gemini/antigravity/skills && echo "Skills installed in ~/.gemini/antigravity/skills"
    ```
 
 3. **Run your first skill**:
@@ -94,7 +98,9 @@ Once installed, just ask your agent naturally:
 > "Use the **@brainstorming** skill to help me plan a SaaS."
 > "Run **@lint-and-validate** on this file."
 
-👉 **[Read the Full Getting Started Guide](docs/GETTING_STARTED.md)**
+👉 **NEW:** [**Complete Usage Guide - Read This First!**](docs/USAGE.md) (answers: "What do I do after installation?", "How do I execute skills?", "What should prompts look like?")
+
+👉 **[Full Getting Started Guide](docs/GETTING_STARTED.md)**
 
 ---
 
@@ -102,19 +108,22 @@ Once installed, just ask your agent naturally:
 
 These skills follow the universal **SKILL.md** format and work with any AI coding assistant that supports agentic skills.
 
-| Tool            | Type | Invocation Example                | Path              |
-| :-------------- | :--- | :-------------------------------- | :---------------- |
-| **Claude Code** | CLI  | `>> /skill-name help me...`       | `.claude/skills/` |
-| **Gemini CLI**  | CLI  | `(User Prompt) Use skill-name...` | `.gemini/skills/` |
-| **Codex CLI**   | CLI  | `(User Prompt) Use skill-name...` | `.codex/skills/`  |
-| **Antigravity** | IDE  | `(Agent Mode) Use skill...`       | `.agent/skills/`  |
-| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/` |
-| **Copilot**     | Ext  | `(Paste content manually)`        | N/A               |
-| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agent/skills/`  |
-| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`   |
+| Tool            | Type | Invocation Example                | Path                                                                  |
+| :-------------- | :--- | :-------------------------------- | :-------------------------------------------------------------------- |
+| **Claude Code** | CLI  | `>> /skill-name help me...`       | `.claude/skills/`                                                     |
+| **Gemini CLI**  | CLI  | `(User Prompt) Use skill-name...` | `.gemini/skills/`                                                     |
+| **Codex CLI**   | CLI  | `(User Prompt) Use skill-name...` | `.codex/skills/`                                                      |
+| **Kiro CLI**    | CLI  | `(Auto) Skills load on-demand`    | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/`                |
+| **Kiro IDE**    | IDE  | `/skill-name or (Auto)`           | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/`                |
+| **Antigravity** | IDE  | `(Agent Mode) Use skill...`       | Global: `~/.gemini/antigravity/skills/` · Workspace: `.agent/skills/` |
+| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/`                                                     |
+| **Copilot**     | Ext  | `(Paste content manually)`        | N/A                                                                   |
+| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agents/skills/`                                                     |
+| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`                                                       |
 
 > [!TIP]
-> **Universal Path**: We recommend cloning to `.agent/skills/`. Most modern tools (Antigravity, recent CLIs) look here by default.
+> **Default installer path**: `~/.gemini/antigravity/skills` (Antigravity global). Use `--path ~/.agent/skills` for workspace-specific install. For manual clone, `.agent/skills/` works as workspace path for Antigravity.
+> **OpenCode Path Update**: opencode path is changed to `.agents/skills` for global skills. See [Place Files](https://opencode.ai/docs/skills/#place-files) directive on OpenCode Docs.
 
 > [!WARNING]
 > **Windows Users**: this repository uses **symlinks** for official skills.
@@ -124,13 +133,22 @@ These skills follow the universal **SKILL.md** format and work with any AI codin
 
 ## Installation
 
-To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Cursor**, **Antigravity**, **OpenCode**, or **AdaL**:
+To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Kiro CLI**, **Kiro IDE**, **Cursor**, **Antigravity**, **OpenCode**, or **AdaL**:
 
 ### Option A: npx (recommended)
 
 ```bash
-# Default: ~/.agent/skills (universal)
+# Default: ~/.gemini/antigravity/skills (Antigravity global)
 npx antigravity-awesome-skills
+
+# Antigravity (explicit; same as default)
+npx antigravity-awesome-skills --antigravity
+
+# Kiro CLI/IDE (global)
+npx antigravity-awesome-skills --path ~/.kiro/skills
+
+# Kiro CLI/IDE (workspace)
+npx antigravity-awesome-skills --path .kiro/skills
 
 # Cursor
 npx antigravity-awesome-skills --cursor
@@ -144,8 +162,17 @@ npx antigravity-awesome-skills --gemini
 # Codex CLI
 npx antigravity-awesome-skills --codex
 
-# OpenCode (Universal)
-npx antigravity-awesome-skills
+# Kiro CLI
+npx antigravity-awesome-skills --kiro
+
+# OpenCode
+npx antigravity-awesome-skills --path .agents/skills
+
+# AdaL CLI
+npx antigravity-awesome-skills --path .adal/skills
+
+# Workspace-specific (e.g. .agent/skills for Antigravity workspace)
+npx antigravity-awesome-skills --path ~/.agent/skills
 
 # Custom path
 npx antigravity-awesome-skills --path ./my-skills
@@ -155,9 +182,20 @@ Run `npx antigravity-awesome-skills --help` for all options. If the directory al
 
 ### Option B: git clone
 
+Without `--path`, the npx installer uses `~/.gemini/antigravity/skills`. For manual clone or a different path (e.g. workspace `.agent/skills`), use one of the following:
+
 ```bash
-# Universal (works with most tools)
+# Antigravity global (matches npx default)
+git clone https://github.com/sickn33/antigravity-awesome-skills.git ~/.gemini/antigravity/skills
+
+# Workspace-specific (e.g. .agent/skills in your project)
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+
+# Kiro CLI/IDE global
+git clone https://github.com/sickn33/antigravity-awesome-skills.git ~/.kiro/skills
+
+# Kiro CLI/IDE workspace
+git clone https://github.com/sickn33/antigravity-awesome-skills.git .kiro/skills
 
 # Claude Code specific
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skills
@@ -168,12 +206,29 @@ git clone https://github.com/sickn33/antigravity-awesome-skills.git .gemini/skil
 # Codex CLI specific
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .codex/skills
 
+# Kiro CLI specific
+git clone https://github.com/sickn33/antigravity-awesome-skills.git .kiro/skills
+
 # Cursor specific
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .cursor/skills
 
-# OpenCode specific (Universal path)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+# OpenCode
+git clone https://github.com/sickn33/antigravity-awesome-skills.git .agents/skills
+
+# AdaL CLI specific
+git clone https://github.com/sickn33/antigravity-awesome-skills.git .adal/skills
 ```
+
+### Option C: Kiro IDE Import (GUI)
+
+For Kiro IDE users, you can import individual skills directly:
+
+1. Open **Agent Steering & Skills** panel in Kiro IDE
+2. Click **+** → **Import a skill** → **GitHub**
+3. Paste skill URL: `https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/[skill-name]`
+4. Example: `https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/aws-cost-optimizer`
+
+> **Note**: This imports one skill at a time. For bulk installation, use Option A or B above.
 
 ---
 
@@ -197,18 +252,18 @@ git clone -c core.symlinks=true https://github.com/sickn33/antigravity-awesome-s
 
 ### Skills installed but not detected by your tool
 
-Install to the tool-specific path (for example `.claude/skills`, `.gemini/skills`, `.codex/skills`, `.cursor/skills`) or use the installer flags (`--claude`, `--gemini`, `--codex`, `--cursor`, `--path`).
+Install to the tool-specific path. Use installer flags: `--antigravity` (default), `--claude`, `--gemini`, `--codex`, `--cursor`, or `--path <dir>` for a custom location (e.g. `~/.agent/skills` for Antigravity workspace).
 
 ### Update an existing installation
 
-```bash
-git -C ~/.agent/skills pull
-```
+**Good news!** You no longer need to manually run `git pull` or `npx antigravity-awesome-skills` to update your skills.
+
+Simply double-click **`START_APP.bat`** (or run it in your terminal). It will automatically fetch and merge the latest skills from the original repository every time you open the Web App, ensuring you always have the most up-to-date catalog!
 
 ### Reinstall from scratch
 
 ```bash
-rm -rf ~/.agent/skills
+rm -rf ~/.gemini/antigravity/skills
 npx antigravity-awesome-skills
 ```
 
@@ -218,26 +273,36 @@ npx antigravity-awesome-skills
 
 **Bundles** are curated groups of skills for a specific role or goal (for example: `Web Wizard`, `Security Engineer`, `OSS Maintainer`).
 
-They help you avoid picking from 700+ skills one by one.
+They help you avoid picking from 946+ skills one by one.
 
-What bundles are:
+### ⚠️ Important: Bundles Are NOT Separate Installations!
 
-- Recommended starting sets for common workflows.
-- A shortcut for onboarding and faster execution.
+**Common confusion:** "Do I need to install each bundle separately?"
 
-What bundles are not:
+**Answer: NO!** Here's what bundles actually are:
 
-- Not a separate install.
-- Not a locked preset.
+**What bundles ARE:**
 
-How to use bundles:
+- ✅ Recommended skill lists organized by role
+- ✅ Curated starting points to help you decide what to use
+- ✅ Time-saving shortcuts for discovering relevant skills
 
-1. Install the repository once.
-2. Pick one bundle in [docs/BUNDLES.md](docs/BUNDLES.md).
-3. Start with 3-5 skills from that bundle in your prompt.
-4. Add more only when needed.
+**What bundles are NOT:**
 
-Examples:
+- ❌ Separate installations or downloads
+- ❌ Different git commands
+- ❌ Something you need to "activate"
+
+### How to use bundles:
+
+1. **Install the repository once** (you already have all skills)
+2. **Browse bundles** in [docs/BUNDLES.md](docs/BUNDLES.md) to find your role
+3. **Pick 3-5 skills** from that bundle to start using in your prompts
+4. **Reference them in your conversations** with your AI (e.g., "Use @brainstorming...")
+
+For detailed examples of how to actually use skills, see the [**Usage Guide**](docs/USAGE.md).
+
+### Examples:
 
 - Building a SaaS MVP: `Essentials` + `Full-Stack Developer` + `QA & Testing`.
 - Hardening production: `Security Developer` + `DevOps & Cloud` + `Observability & Monitoring`.
@@ -280,9 +345,65 @@ The repository is organized into specialized domains to transform your AI into a
 
 Counts change as new skills are added. For the current full registry, see [CATALOG.md](CATALOG.md).
 
-## Browse 845+ Skills
+## Browse 950+ Skills
 
-We have moved the full skill registry to a dedicated catalog to keep this README clean.
+We have moved the full skill registry to a dedicated catalog to keep this README clean, and we've also introduced an interactive **Web App**!
+
+### 🌐 Interactive Skills Web App
+
+A modern web interface to explore, search, and use the 950+ skills directly from your browser.
+
+#### ✨ Features
+
+- 🔍 **Full-text search** – Search skills by name, description, or content
+- 🏷️ **Category filters** – Frontend, Backend, Security, DevOps, etc.
+- 📝 **Markdown rendering** – View complete documentation with syntax highlighting
+- 📋 **Copy buttons** – Copy `@skill-name` or full content in 1 click
+- 🛠️ **Prompt Builder** – Add custom context before copying
+- 🌙 **Dark mode** – Adaptive light/dark interface
+- ⚡ **Auto-update** – Automatically syncs with upstream repo
+
+#### 🚀 Quick Start
+
+**Windows:**
+```bash
+# Double-click or terminal
+START_APP.bat
+```
+
+**macOS/Linux:**
+```bash
+# 1. Install dependencies (first time)
+cd web-app && npm install
+
+# 2. Setup assets and launch
+npm run app:dev
+```
+
+**Available npm commands:**
+```bash
+npm run app:setup      # Copy skills to web-app/public/
+npm run app:dev        # Start dev server
+npm run app:build      # Production build
+npm run app:preview    # Preview production build
+```
+
+The app automatically opens at `http://localhost:5173` (or alternative port).
+
+#### 🛠️ Prompt Builder
+
+On each skill page you'll find the **Prompt Builder**:
+1. Write specific requirements (e.g., "Use React 19, TypeScript and Tailwind")
+2. Click **Copy Prompt** – copies `@skill-name + context`
+3. Or **Copy Full Content** – copies the full documentation
+4. Paste into your AI assistant (Claude, Cursor, Gemini, etc.)
+
+#### 🛠️ New: Interactive Prompt Builder
+The web app is no longer just a static catalog! When you click on any skill, you will see an **Interactive Prompt Builder** box.
+Instead of manually copying `@skill-name` and writing your requirements separately in your IDE:
+1. Type your specific project constraints into the text box (e.g., "Use React 19 and Tailwind").
+2. Click **Copy Prompt**.
+3. Your clipboard now has a fully formatted, ready-to-run prompt combining the skill invocation and your custom context!
 
 👉 **[View the Complete Skill Catalog (CATALOG.md)](CATALOG.md)**
 
@@ -294,11 +415,12 @@ We welcome contributions from the community! To add a new skill:
 
 1. **Fork** the repository.
 2. **Create a new directory** inside `skills/` for your skill.
-3. **Add a `SKILL.md`** with the required frontmatter (name and description).
-4. **Run validation**: `python3 scripts/validate_skills.py`.
-5. **Submit a Pull Request**.
+3. **Add a `SKILL.md`** with the required frontmatter (name, description, risk, source). See [docs/SKILL_ANATOMY.md](docs/SKILL_ANATOMY.md) and [docs/QUALITY_BAR.md](docs/QUALITY_BAR.md).
+4. **Add date tracking** (optional): Include `date_added: "YYYY-MM-DD"` in frontmatter. See [docs/SKILLS_DATE_TRACKING.md](docs/SKILLS_DATE_TRACKING.md) for details.
+5. **Run validation**: `npm run validate` (or `npm run validate:strict` for CI). Optionally run `python3 scripts/validate_references.py` if you touch workflows or bundles.
+6. **Submit a Pull Request**.
 
-Please ensure your skill follows the Antigravity/Claude Code best practices.
+Please ensure your skill follows the Antigravity/Claude Code best practices. Maintainers: see [docs/AUDIT.md](docs/AUDIT.md) for coherence checks and [.github/MAINTENANCE.md](.github/MAINTENANCE.md) for the full validation chain.
 
 ---
 
@@ -361,6 +483,7 @@ This collection would not be possible without the incredible work of the Claude 
 ### Community Contributors
 
 - **[rmyndharis/antigravity-skills](https://github.com/rmyndharis/antigravity-skills)**: For the massive contribution of 300+ Enterprise skills and the catalog generation logic.
+- **[amartelr/antigravity-workspace-manager](https://github.com/amartelr/antigravity-workspace-manager)**: Official Workspace Manager CLI companion to dynamically auto-provision subsets of skills across unlimited local development environments.
 
 - **[obra/superpowers](https://github.com/obra/superpowers)**: The original "Superpowers" by Jesse Vincent.
 - **[guanyang/antigravity-skills](https://github.com/guanyang/antigravity-skills)**: Core Antigravity extensions.
@@ -374,11 +497,15 @@ This collection would not be possible without the incredible work of the Claude 
 - **[zircote/.claude](https://github.com/zircote/.claude)**: Shopify development skill reference.
 - **[vibeforge1111/vibeship-spawner-skills](https://github.com/vibeforge1111/vibeship-spawner-skills)**: AI Agents, Integrations, Maker Tools (57 skills, Apache 2.0).
 - **[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)**: Marketing skills for CRO, copywriting, SEO, paid ads, and growth (23 skills, MIT).
+- **[Silverov/yandex-direct-skill](https://github.com/Silverov/yandex-direct-skill)**: Yandex Direct (API v5) advertising audit skill — 55 automated checks, A-F scoring, campaign/ad/keyword analysis for the Russian PPC market (MIT).
 - **[vudovn/antigravity-kit](https://github.com/vudovn/antigravity-kit)**: AI Agent templates with Skills, Agents, and Workflows (33 skills, MIT).
 - **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)**: Complete Claude Code configuration collection from Anthropic hackathon winner - skills only (8 skills, MIT).
 - **[whatiskadudoing/fp-ts-skills](https://github.com/whatiskadudoing/fp-ts-skills)**: Practical fp-ts skills for TypeScript – fp-ts-pragmatic, fp-ts-react, fp-ts-errors (v4.4.0).
 - **[webzler/agentMemory](https://github.com/webzler/agentMemory)**: Source for the agent-memory-mcp skill.
 - **[sstklen/claude-api-cost-optimization](https://github.com/sstklen/claude-api-cost-optimization)**: Save 50-90% on Claude API costs with smart optimization strategies (MIT).
+- **[Wittlesus/cursorrules-pro](https://github.com/Wittlesus/cursorrules-pro)**: Professional .cursorrules configurations for 8 frameworks - Next.js, React, Python, Go, Rust, and more. Works with Cursor, Claude Code, and Windsurf.
+- **[SSOJet/skills](https://github.com/ssojet/skills)**: Production-ready SSOJet skills and integration guides for popular frameworks and platforms — Node.js, Next.js, React, Java, .NET Core, Go, iOS, Android, and more. Works seamlessly with SSOJet SAML, OIDC, and enterprise SSO flows.Works with Cursor,Antigravity, Claude Code, and Windsurf.
+- **[MojoAuth/skills](https://github.com/MojoAuth/skills)**: Production-ready MojoAuth guides and examples for popular frameworks like Node.js, Next.js, React, Java, .NET Core, Go, iOS, and Android.
 
 ### Inspirations
 
@@ -437,6 +564,16 @@ We officially thank the following contributors for their help in making this rep
 - [@ericgandrade](https://github.com/ericgandrade)
 - [@sohamganatra](https://github.com/sohamganatra)
 - [@Nguyen-Van-Chan](https://github.com/Nguyen-Van-Chan)
+- [@8hrsk](https://github.com/8hrsk)
+- [@Wittlesus](https://github.com/Wittlesus)
+- [@Vonfry](https://github.com/Vonfry)
+- [@ssumanbiswas](https://github.com/ssumanbiswas)
+- [@amartelr](https://github.com/amartelr)
+- [@fernandorych](https://github.com/fernandorych)
+- [@GeekLuffy](https://github.com/GeekLuffy)
+- [@zinzied](https://github.com/zinzied)
+- [@code-vj](https://github.com/code-vj)
+- [@thuanlm](https://github.com/thuanlm)
 
 ---
 

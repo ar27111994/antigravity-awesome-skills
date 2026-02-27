@@ -1,6 +1,9 @@
 ---
 name: avalonia-viewmodels-zafiro
-description: Optimal ViewModel and Wizard creation patterns for Avalonia using Zafiro and ReactiveUI.
+description: "Optimal ViewModel and Wizard creation patterns for Avalonia using Zafiro and ReactiveUI."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Avalonia ViewModels with Zafiro
@@ -27,3 +30,6 @@ This skill provides a set of best practices and patterns for creating ViewModels
 For real-world implementations, refer to the **Angor** project:
 - `CreateProjectFlowV2.cs`: Excellent example of complex Wizard building.
 - `HomeViewModel.cs`: Simple section ViewModel using functional-reactive commands.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

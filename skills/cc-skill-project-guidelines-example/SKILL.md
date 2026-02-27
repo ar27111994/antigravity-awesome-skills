@@ -1,8 +1,9 @@
 ---
 name: cc-skill-project-guidelines-example
-description: Project Guidelines Skill (Example)
-author: affaan-m
-version: "1.0"
+description: "Project Guidelines Skill (Example)"
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Project Guidelines Skill (Example)

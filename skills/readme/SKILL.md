@@ -1,8 +1,9 @@
 ---
 name: readme
-description: "When the user wants to create or update a README.md file for a project. Also use when the user says 'write readme,' 'create readme,' 'document this project,' 'project documentation,' or asks for help with README.md. This skill creates absurdly thorough documentation covering local setup, architecture, and deployment."
-source: "https://github.com/Shpigford/skills/tree/main/readme"
+description: "When the user wants to create or update a README.md file for a project. Also use when the user says 'write readme,' 'create readme,' 'document this project,' 'project documentation,' or asks for he..."
 risk: safe
+source: "https://github.com/Shpigford/skills/tree/main/readme"
+date_added: "2026-02-27"
 ---
 
 # README Generator

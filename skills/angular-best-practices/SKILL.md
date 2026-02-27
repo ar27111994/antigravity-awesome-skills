@@ -1,8 +1,9 @@
 ---
 name: angular-best-practices
-description: Angular performance optimization and best practices guide. Use when writing, reviewing, or refactoring Angular code for optimal performance, bundle size, and rendering efficiency.
+description: "Angular performance optimization and best practices guide. Use when writing, reviewing, or refactoring Angular code for optimal performance, bundle size, and rendering efficiency."
 risk: safe
 source: self
+date_added: "2026-02-27"
 ---
 
 # Angular Best Practices
@@ -557,3 +558,6 @@ export class Component implements OnInit, OnDestroy {
 - [Zoneless Angular](https://angular.dev/guide/experimental/zoneless)
 - [Angular SSR Guide](https://angular.dev/guide/ssr)
 - [Change Detection Deep Dive](https://angular.dev/guide/change-detection)
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

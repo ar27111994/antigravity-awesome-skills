@@ -1,7 +1,9 @@
 ---
 name: 3d-games
-description: 3D game development principles. Rendering, shaders, physics, cameras.
-allowed-tools: Read, Write, Edit, Glob, Grep
+description: "3D game development principles. Rendering, shaders, physics, cameras."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # 3D Game Development
@@ -133,3 +135,6 @@ allowed-tools: Read, Write, Edit, Glob, Grep
 ---
 
 > **Remember:** 3D is about illusion. Create the impression of detail, not the detail itself.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

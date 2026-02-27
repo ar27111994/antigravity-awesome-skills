@@ -1,7 +1,9 @@
 ---
 name: segment-cdp
-description: "Expert patterns for Segment Customer Data Platform including Analytics.js, server-side tracking, tracking plans with Protocols, identity resolution, destinations configuration, and data governance best practices. Use when: segment, analytics.js, customer data platform, cdp, tracking plan."
-source: vibeship-spawner-skills (Apache 2.0)
+description: "Expert patterns for Segment Customer Data Platform including Analytics.js, server-side tracking, tracking plans with Protocols, identity resolution, destinations configuration, and data governance ..."
+risk: unknown
+source: "vibeship-spawner-skills (Apache 2.0)"
+date_added: "2026-02-27"
 ---
 
 # Segment CDP
@@ -48,3 +50,6 @@ Connect to Protocols for enforcement.
 | Issue | medium | See docs |
 | Issue | medium | See docs |
 | Issue | high | See docs |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

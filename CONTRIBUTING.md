@@ -10,6 +10,8 @@ With V4, we raised the bar for quality. Please read the **new Quality Standards*
 **Critical for new skills:** Every skill submitted must pass our **5-Point Quality Check** (see `docs/QUALITY_BAR.md` for details):
 
 1.  **Metadata**: Correct Frontmatter (`name`, `description`).
+    - The `name` MUST exactly match the folder name.
+    - The `description` MUST be concise (under 200 characters) and focus on WHEN to trigger the skill.
 2.  **Safety**: No harmful commands without "Risk" labels.
 3.  **Clarity**: Clear "When to use" section.
 4.  **Examples**: At least one copy-paste usage example.

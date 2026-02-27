@@ -1,6 +1,9 @@
 ---
 name: wiki-researcher
-description: Conducts multi-turn iterative deep research on specific topics within a codebase with zero tolerance for shallow analysis. Use when the user wants an in-depth investigation, needs to understand how something works across multiple files, or asks for comprehensive analysis of a specific system or pattern.
+description: "Conducts multi-turn iterative deep research on specific topics within a codebase with zero tolerance for shallow analysis. Use when the user wants an in-depth investigation, needs to understand how..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Wiki Researcher
@@ -63,3 +66,6 @@ Each iteration takes a different lens and builds on all prior findings:
 - Include Mermaid diagrams (dark-mode colors) when they clarify architecture or flow
 - Stay focused on the specific topic
 - Flag what you HAVEN'T explored — boundaries of your knowledge at all times
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

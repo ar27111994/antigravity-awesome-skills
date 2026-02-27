@@ -1,6 +1,9 @@
 ---
 name: k8s-security-policies
-description: Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security standards.
+description: "Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing Kubernetes clusters, implementing network isolation, or ..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Kubernetes Security Policies

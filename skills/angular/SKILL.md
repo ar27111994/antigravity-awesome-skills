@@ -1,12 +1,9 @@
 ---
 name: angular
 description: >-
-  Modern Angular (v20+) expert with deep knowledge of Signals, Standalone
-  Components, Zoneless applications, SSR/Hydration, and reactive patterns.
-  Use PROACTIVELY for Angular development, component architecture, state
-  management, performance optimization, and migration to modern patterns.
 risk: safe
 source: self
+date_added: "2026-02-27"
 ---
 
 # Angular Expert

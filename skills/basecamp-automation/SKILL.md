@@ -1,8 +1,9 @@
 ---
 name: basecamp-automation
 description: "Automate Basecamp project management, to-dos, messages, people, and to-do list organization via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Basecamp Automation via Rube MCP
@@ -232,3 +233,6 @@ Basecamp uses page-based pagination on list endpoints:
 | List all people | `BASECAMP_GET_PEOPLE` | (none) |
 | List project people | `BASECAMP_LIST_PROJECT_PEOPLE` | `project_id` |
 | Manage access | `BASECAMP_PUT_PROJECTS_PEOPLE_USERS` | `project_id`, `grant`, `revoke`, `create` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

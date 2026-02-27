@@ -1,6 +1,9 @@
 ---
 name: sast-configuration
-description: Configure Static Application Security Testing (SAST) tools for automated vulnerability detection in application code. Use when setting up security scanning, implementing DevSecOps practices, or automating code vulnerability detection.
+description: "Configure Static Application Security Testing (SAST) tools for automated vulnerability detection in application code. Use when setting up security scanning, implementing DevSecOps practices, or aut..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # SAST Configuration
@@ -85,15 +88,15 @@ codeql database create mydb --language=python
 
 ## Reference Documentation
 
-- [Semgrep Rule Creation](references/semgrep-rules.md) - Pattern-based security rule development
-- [SonarQube Configuration](references/sonarqube-config.md) - Quality gates and profiles
-- [CodeQL Setup Guide](references/codeql-setup.md) - Query development and workflows
+- Semgrep Rule Creation - Pattern-based security rule development
+- SonarQube Configuration - Quality gates and profiles
+- CodeQL Setup Guide - Query development and workflows
 
 ## Templates & Assets
 
-- [semgrep-config.yml](assets/semgrep-config.yml) - Production-ready Semgrep configuration
-- [sonarqube-settings.xml](assets/sonarqube-settings.xml) - SonarQube quality profile template
-- [run-sast.sh](scripts/run-sast.sh) - Automated SAST execution script
+- semgrep-config.yml - Production-ready Semgrep configuration
+- sonarqube-settings.xml - SonarQube quality profile template
+- run-sast.sh - Automated SAST execution script
 
 ## Integration Patterns
 
@@ -190,9 +193,9 @@ semgrep --config p/pci-dss --json -o pci-scan-results.json
 
 ## Related Skills
 
-- [OWASP Top 10 Checklist](../owasp-top10-checklist/SKILL.md)
-- [Container Security](../container-security/SKILL.md)
-- [Dependency Scanning](../dependency-scanning/SKILL.md)
+- OWASP Top 10 Checklist
+- Container Security
+- Dependency Scanning
 
 ## Tool Comparison
 

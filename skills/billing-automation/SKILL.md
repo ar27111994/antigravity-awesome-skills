@@ -1,6 +1,9 @@
 ---
 name: billing-automation
-description: Build automated billing systems for recurring payments, invoicing, subscription lifecycle, and dunning management. Use when implementing subscription billing, automating invoicing, or managing recurring payment systems.
+description: "Build automated billing systems for recurring payments, invoicing, subscription lifecycle, and dunning management. Use when implementing subscription billing, automating invoicing, or managing recu..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Billing Automation

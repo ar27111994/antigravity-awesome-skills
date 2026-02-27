@@ -1,7 +1,9 @@
 ---
 name: documentation-templates
-description: Documentation templates and structure guidelines. README, API docs, code comments, and AI-friendly documentation.
-allowed-tools: Read, Glob, Grep
+description: "Documentation templates and structure guidelines. README, API docs, code comments, and AI-friendly documentation."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Documentation Templates
@@ -48,8 +50,8 @@ Brief one-line description.
 
 ## Documentation
 
-- [API Reference](./docs/api.md)
-- [Architecture](./docs/architecture.md)
+- API Reference
+- Architecture
 
 ## License
 
@@ -192,3 +194,6 @@ For RAG indexing:
 ---
 
 > **Remember:** Templates are starting points. Adapt to your project's needs.
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

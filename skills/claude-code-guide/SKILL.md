@@ -1,6 +1,9 @@
 ---
-name: Claude Code Guide
-description: Master guide for using Claude Code effectively. Includes configuration templates, prompting strategies "Thinking" keywords, debugging techniques, and best practices for interacting with the agent.
+name: claude-code-guide
+description: "Master guide for using Claude Code effectively. Includes configuration templates, prompting strategies \\\"Thinking\\\" keywords, debugging techniques, and best practices for interacting wit..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Claude Code Guide
@@ -66,3 +69,6 @@ If the agent is stuck or behaving unexpectedly:
 ## Reference
 
 Based on [Claude Code Guide by zebbern](https://github.com/zebbern/claude-code-guide).
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

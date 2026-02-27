@@ -1,6 +1,9 @@
 ---
 name: prisma-expert
-description: Prisma ORM expert for schema design, migrations, query optimization, relations modeling, and database operations. Use PROACTIVELY for Prisma schema issues, migration problems, query performance, relation design, or database connection issues.
+description: "Prisma ORM expert for schema design, migrations, query optimization, relations modeling, and database operations. Use PROACTIVELY for Prisma schema issues, migration problems, query performance, re..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Prisma Expert
@@ -353,3 +356,6 @@ const updateWithVersion = await prisma.post.update({
 3. **Ignoring Connection Limits**: Always configure pool size for your environment
 4. **Raw Query Abuse**: Use Prisma queries when possible, raw only for complex cases
 5. **Migration in Production Dev Mode**: Never use `migrate dev` in production
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

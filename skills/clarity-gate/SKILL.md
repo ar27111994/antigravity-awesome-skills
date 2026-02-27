@@ -1,8 +1,9 @@
 ---
 name: clarity-gate
 description: "Pre-ingestion verification for epistemic quality in RAG systems with 9-point verification and Two-Round HITL workflow"
-source: "https://github.com/frmoretto/clarity-gate"
 risk: safe
+source: "https://github.com/frmoretto/clarity-gate"
+date_added: "2026-02-27"
 ---
 
 # Clarity Gate

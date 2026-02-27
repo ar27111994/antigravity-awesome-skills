@@ -1,8 +1,9 @@
 ---
 name: todoist-automation
 description: "Automate Todoist task management, projects, sections, filtering, and bulk operations via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Todoist Automation via Rube MCP
@@ -229,3 +230,6 @@ Always resolve human-readable names to IDs before operations:
 | Delete task | `TODOIST_DELETE_TASK` | `task_id` |
 | Completed tasks | `TODOIST_GET_COMPLETED_TASKS_BY_COMPLETION_DATE` | `since`, `until` |
 | List filters | `TODOIST_LIST_FILTERS` | `sync_token` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -1,8 +1,9 @@
 ---
 name: gitlab-automation
 description: "Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio). Always search tools first for current schemas."
-requires:
-  mcp: [rube]
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # GitLab Automation via Rube MCP
@@ -252,3 +253,6 @@ When using project paths as identifiers:
 | User status | `GITLAB_GET_USERS_ID_STATUS` | user ID |
 | List project members | `GITLAB_LIST_ALL_PROJECT_MEMBERS` | `id`, `query`, `state` |
 | List project users | `GITLAB_LIST_PROJECT_USERS` | `id`, `search` |
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

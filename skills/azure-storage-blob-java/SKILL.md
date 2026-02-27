@@ -1,7 +1,9 @@
 ---
 name: azure-storage-blob-java
-description: Build blob storage applications with Azure Storage Blob SDK for Java. Use when uploading, downloading, or managing files in Azure Blob Storage, working with containers, or implementing streaming data operations.
-package: com.azure:azure-storage-blob
+description: "Build blob storage applications with Azure Storage Blob SDK for Java. Use when uploading, downloading, or managing files in Azure Blob Storage, working with containers, or implementing streaming da..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Azure Storage Blob SDK for Java
@@ -386,3 +388,6 @@ AZURE_STORAGE_ACCOUNT_URL=https://<account>.blob.core.windows.net
 - "storage streaming"
 - "SAS token generation"
 - "blob metadata properties"
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

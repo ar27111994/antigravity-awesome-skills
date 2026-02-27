@@ -1,9 +1,9 @@
 ---
 name: hugging-face-jobs
-description: "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, cost estimation, authentication with tokens, secrets management, timeout configuration, and result persistence. Designed for general-purpose compute workloads including data processing, inference, experiments, batch jobs, and any Python-based tasks. Should be invoked for tasks involving cloud compute, GPU workloads, or when users mention running jobs on Hugging Face infrastructure without local setup."
-license: "Complete terms in LICENSE.txt"
-source: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-jobs"
+description: "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, cost estimation, authentication with tok..."
 risk: safe
+source: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-jobs"
+date_added: "2026-02-27"
 ---
 
 # Running Workloads on Hugging Face Jobs

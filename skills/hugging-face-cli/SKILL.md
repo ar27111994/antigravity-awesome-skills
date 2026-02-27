@@ -1,8 +1,9 @@
 ---
 name: hugging-face-cli
-description: "Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create repos, manage local cache, or run compute jobs on HF infrastructure. Covers authentication, file transfers, repository creation, cache operations, and cloud compute."
-source: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-cli"
+description: "Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create repos, manage local cache, or run comput..."
 risk: safe
+source: "https://github.com/huggingface/skills/tree/main/skills/hugging-face-cli"
+date_added: "2026-02-27"
 ---
 
 # Hugging Face CLI
@@ -194,5 +195,5 @@ hf cache rm model/gpt2           # Remove a repo from cache
 
 ## References
 
-- **Complete command reference**: See [references/commands.md](references/commands.md)
-- **Workflow examples**: See [references/examples.md](references/examples.md)
+- **Complete command reference**: See references/commands.md
+- **Workflow examples**: See references/examples.md

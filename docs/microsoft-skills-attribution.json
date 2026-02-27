@@ -2,7 +2,7 @@
   "source": "microsoft/skills",
   "repository": "https://github.com/microsoft/skills",
   "license": "MIT",
-  "synced_skills": 129,
+  "synced_skills": 140,
   "structure": "flat (frontmatter name as directory name)",
   "skills": [
     {
@@ -649,6 +649,61 @@
       "flat_name": "wiki-changelog",
       "original_path": "plugins/wiki-changelog",
       "source": "microsoft/skills (plugin)"
+    },
+    {
+      "flat_name": "fastapi-router-py",
+      "original_path": ".github/skills/fastapi-router-py",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "azd-deployment",
+      "original_path": ".github/skills/azd-deployment",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "copilot-sdk",
+      "original_path": ".github/skills/copilot-sdk",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "azure-ai-agents-persistent-dotnet",
+      "original_path": ".github/skills/azure-ai-agents-persistent-dotnet",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "hosted-agents-v2-py",
+      "original_path": ".github/skills/hosted-agents-v2-py",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "pydantic-models-py",
+      "original_path": ".github/skills/pydantic-models-py",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "skill-creator-ms",
+      "original_path": ".github/skills/skill-creator",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "podcast-generation",
+      "original_path": ".github/skills/podcast-generation",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "github-issue-creator",
+      "original_path": ".github/skills/github-issue-creator",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "azure-ai-agents-persistent-java",
+      "original_path": ".github/skills/azure-ai-agents-persistent-java",
+      "source": "microsoft/skills (.github/skills)"
+    },
+    {
+      "flat_name": "mcp-builder-ms",
+      "original_path": ".github/skills/mcp-builder",
+      "source": "microsoft/skills (.github/skills)"
     }
   ]
 }

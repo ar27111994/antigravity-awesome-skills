@@ -1,6 +1,9 @@
 ---
 name: wiki-onboarding
-description: Generates two complementary onboarding guides — a Principal-Level architectural deep-dive and a Zero-to-Hero contributor walkthrough. Use when the user wants onboarding documentation for a codebase.
+description: "Generates two complementary onboarding guides \u2014 a Principal-Level architectural deep-dive and a Zero-to-Hero contributor walkthrough. Use when the user wants onboarding documentation fo..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Wiki Onboarding Guide Generator
@@ -75,3 +78,6 @@ Scan the repository for build files to determine the primary language for code e
 - Include expected output for verification steps
 - Use Mermaid for workflow diagrams (dark-mode colors)
 - Ground all claims in actual code — cite `(file_path:line_number)`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

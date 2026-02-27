@@ -1,7 +1,9 @@
 ---
 name: slack-gif-creator
-description: Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like "make me a GIF of X doing Y for Slack."
-license: Complete terms in LICENSE.txt
+description: "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Slack GIF Creator
@@ -252,3 +254,6 @@ Be creative! Combine concepts (bouncing + rotating, pulsing + sliding, etc.) and
 ```bash
 pip install pillow imageio numpy
 ```
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

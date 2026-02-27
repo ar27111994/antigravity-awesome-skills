@@ -1,8 +1,9 @@
 ---
 name: memory-systems
 description: "Design short-term, long-term, and graph-based memory architectures"
-source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems"
 risk: safe
+source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems"
+date_added: "2026-02-27"
 ---
 
 ## When to Use This Skill
@@ -207,7 +208,7 @@ This skill builds on context-fundamentals. It connects to:
 ## References
 
 Internal reference:
-- [Implementation Reference](./references/implementation.md) - Detailed implementation patterns
+- Implementation Reference - Detailed implementation patterns
 
 Related skills in this collection:
 - context-fundamentals - Context basics

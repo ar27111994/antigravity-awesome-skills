@@ -1,7 +1,9 @@
 ---
 name: browser-automation
-description: "Browser automation powers web testing, scraping, and AI agent interactions. The difference between a flaky script and a reliable system comes down to understanding selectors, waiting strategies, and anti-detection patterns.  This skill covers Playwright (recommended) and Puppeteer, with patterns for testing, scraping, and agentic browser control. Key insight: Playwright won the framework war. Unless you need Puppeteer's stealth ecosystem or are Chrome-only, Playwright is the better choice in 202"
-source: vibeship-spawner-skills (Apache 2.0)
+description: "Browser automation powers web testing, scraping, and AI agent interactions. The difference between a flaky script and a reliable system comes down to understanding selectors, waiting strategies, an..."
+risk: unknown
+source: "vibeship-spawner-skills (Apache 2.0)"
+date_added: "2026-02-27"
 ---
 
 # Browser Automation
@@ -68,3 +70,6 @@ Let Playwright wait automatically, never add manual waits
 ## Related Skills
 
 Works well with: `agent-tool-builder`, `workflow-automation`, `computer-use-agents`, `test-architect`
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

@@ -1,6 +1,9 @@
 ---
 name: postmortem-writing
-description: Write effective blameless postmortems with root cause analysis, timelines, and action items. Use when conducting incident reviews, writing postmortem documents, or improving incident response processes.
+description: "Write effective blameless postmortems with root cause analysis, timelines, and action items. Use when conducting incident reviews, writing postmortem documents, or improving incident response proce..."
+risk: unknown
+source: community
+date_added: "2026-02-27"
 ---
 
 # Postmortem Writing
@@ -221,8 +224,8 @@ The deployment completed at 14:23, but the first alert didn't fire until 14:31 (
 - 2023-11-02: Similar connection issue in User Service (POSTMORTEM-42)
 
 ### References
-- [Connection Pool Best Practices](internal-wiki/connection-pools)
-- [Deployment Runbook](internal-wiki/deployment-runbook)
+- Connection Pool Best Practices
+- Deployment Runbook
 ```
 
 ### Template 2: 5 Whys Analysis

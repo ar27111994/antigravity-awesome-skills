@@ -114,6 +114,8 @@ git pull origin main
 
 ## 🛠️ Using Skills
 
+> **💡 For a complete guide with examples, see [USAGE.md](USAGE.md)**
+
 ### How do I invoke a skill?
 
 Use the `@` symbol followed by the skill name:

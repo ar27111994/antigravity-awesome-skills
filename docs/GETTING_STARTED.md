@@ -1,6 +1,8 @@
-# Getting Started with Antigravity Awesome Skills (V4)
+# Getting Started with Antigravity Awesome Skills (V5)
 
 **New here? This guide will help you supercharge your AI Agent in 5 minutes.**
+
+> **💡 Confused about what to do after installation?** Check out the [**Complete Usage Guide**](USAGE.md) for detailed explanations and examples!
 
 ---
 
@@ -15,7 +17,7 @@ AI Agents (like **Claude Code**, **Gemini**, **Cursor**) are smart, but they lac
 
 ## ⚡️ Quick Start: The "Starter Packs"
 
-Don't panic about the 700+ skills. You don't need them all at once.
+Don't panic about the 946+ skills. You don't need them all at once.
 We have curated **Starter Packs** to get you running immediately.
 
 You **install the full repo once** (npx or clone); Starter Packs are curated lists to help you **pick which skills to use** by role (e.g. Web Wizard, Hacker Pack)—they are not a different way to install.
@@ -28,7 +30,7 @@ You **install the full repo once** (npx or clone); Starter Packs are curated lis
 npx antigravity-awesome-skills
 ```
 
-This clones to `~/.agent/skills` by default. Use `--cursor`, `--claude`, `--gemini`, or `--codex` to install for a specific tool, or `--path <dir>` for a custom location. Run `npx antigravity-awesome-skills --help` for details.
+This clones to `~/.gemini/antigravity/skills` by default. Use `--cursor`, `--claude`, `--gemini`, `--codex`, or `--kiro` to install for a specific tool, or `--path <dir>` for a custom location. Run `npx antigravity-awesome-skills --help` for details.
 
 If you see a 404 error, use: `npx github:sickn33/antigravity-awesome-skills`
 
@@ -93,14 +95,18 @@ Once installed, just talk to your AI naturally.
 
 ## 🔌 Supported Tools
 
-| Tool            | Status          | Path              |
-| :-------------- | :-------------- | :---------------- |
-| **Claude Code** | ✅ Full Support | `.claude/skills/` |
-| **Gemini CLI**  | ✅ Full Support | `.gemini/skills/` |
-| **Codex CLI**   | ✅ Full Support | `.codex/skills/`  |
-| **Antigravity** | ✅ Native       | `.agent/skills/`  |
-| **Cursor**      | ✅ Native       | `.cursor/skills/` |
-| **Copilot**     | ⚠️ Text Only    | Manual copy-paste |
+| Tool            | Status          | Path                                                                  |
+| :-------------- | :-------------- | :-------------------------------------------------------------------- |
+| **Claude Code** | ✅ Full Support | `.claude/skills/`                                                     |
+| **Gemini CLI**  | ✅ Full Support | `.gemini/skills/`                                                     |
+| **Codex CLI**   | ✅ Full Support | `.codex/skills/`                                                      |
+| **Kiro CLI**    | ✅ Full Support | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/`                |
+| **Kiro IDE**    | ✅ Full Support | Global: `~/.kiro/skills/` · Workspace: `.kiro/skills/`                |
+| **Antigravity** | ✅ Native       | Global: `~/.gemini/antigravity/skills/` · Workspace: `.agent/skills/` |
+| **Cursor**      | ✅ Native       | `.cursor/skills/`                                                     |
+| **OpenCode**    | ✅ Full Support | `.agents/skills/`                                                     |
+| **AdaL CLI**    | ✅ Full Support | `.adal/skills/`                                                       |
+| **Copilot**     | ⚠️ Text Only    | Manual copy-paste                                                     |
 
 ---
 
@@ -118,7 +124,7 @@ _Check the [Skill Catalog](../CATALOG.md) for the full list._
 
 ## ❓ FAQ
 
-**Q: Do I need to install all 700+ skills?**
+**Q: Do I need to install all 946+ skills?**
 A: You clone the whole repo once; your AI only _reads_ the skills you invoke (or that are relevant), so it stays lightweight. **Starter Packs** in [BUNDLES.md](BUNDLES.md) are curated lists to help you discover the right skills for your role—they don't change how you install.
 
 **Q: Can I make my own skills?**
