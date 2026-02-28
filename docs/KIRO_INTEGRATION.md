@@ -7,6 +7,7 @@ This guide explains how to use Antigravity Awesome Skills with **Kiro CLI**, AWS
 ## What is Kiro?
 
 Kiro is AWS's agentic AI IDE that combines:
+
 - **Autonomous coding agents** that work independently for extended periods
 - **Context-aware assistance** with deep understanding of your codebase
 - **AWS service integration** with native support for CDK, SAM, and Terraform
@@ -16,7 +17,8 @@ Kiro is AWS's agentic AI IDE that combines:
 ## Why Use Skills with Kiro?
 
 Kiro's agentic capabilities are enhanced by skills that provide:
-- **Domain expertise** across 883+ specialized areas
+
+- **Domain expertise** across 954+ specialized areas
 - **Best practices** from Anthropic, OpenAI, Google, Microsoft, and AWS
 - **Workflow automation** for common development tasks
 - **AWS-specific patterns** for serverless, infrastructure, and cloud architecture
@@ -68,6 +70,7 @@ Run @security-audit on my CDK stack
 ### Recommended Skills for Kiro Users
 
 #### AWS & Cloud Infrastructure
+
 - `@aws-serverless` - Serverless architecture patterns
 - `@aws-cdk` - AWS CDK best practices
 - `@aws-sam` - SAM template patterns
@@ -76,24 +79,28 @@ Run @security-audit on my CDK stack
 - `@kubernetes-expert` - K8s deployment patterns
 
 #### Architecture & Design
+
 - `@architecture` - System design and ADRs
 - `@c4-context` - C4 model diagrams
 - `@senior-architect` - Scalable architecture patterns
 - `@microservices-patterns` - Microservices design
 
 #### Security
+
 - `@api-security-best-practices` - API security hardening
 - `@vulnerability-scanner` - Security vulnerability detection
 - `@owasp-top-10` - OWASP security patterns
 - `@aws-security-best-practices` - AWS security configuration
 
 #### Development
+
 - `@typescript-expert` - TypeScript best practices
 - `@python-patterns` - Python design patterns
 - `@react-patterns` - React component patterns
 - `@test-driven-development` - TDD workflows
 
 #### DevOps & Automation
+
 - `@ci-cd-pipeline` - CI/CD automation
 - `@github-actions` - GitHub Actions workflows
 - `@monitoring-observability` - Observability patterns
@@ -134,12 +141,14 @@ Run @security-audit on my CDK stack
 ### MCP Integration
 
 Kiro's MCP support allows skills to:
+
 - Call external APIs securely
 - Query databases with context
 - Integrate with AWS services
 - Access documentation in real-time
 
 Skills that leverage MCP:
+
 - `@rag-engineer` - RAG system implementation
 - `@langgraph` - Agent workflow orchestration
 - `@prompt-engineer` - LLM prompt optimization
@@ -149,8 +158,8 @@ Skills that leverage MCP:
 Kiro can work independently for extended periods. Use skills to guide long-running tasks:
 
 ```
-Use @systematic-debugging to investigate and fix all TypeScript errors in the codebase, 
-then apply @test-driven-development to add missing tests, and finally run @documentation 
+Use @systematic-debugging to investigate and fix all TypeScript errors in the codebase,
+then apply @test-driven-development to add missing tests, and finally run @documentation
 to update all README files.
 ```
 
@@ -159,8 +168,8 @@ to update all README files.
 Kiro maintains deep context. Reference multiple skills in complex workflows:
 
 ```
-I'm building a SaaS application. Use @brainstorming for the MVP plan, 
-@aws-serverless for the backend, @react-patterns for the frontend, 
+I'm building a SaaS application. Use @brainstorming for the MVP plan,
+@aws-serverless for the backend, @react-patterns for the frontend,
 @stripe-integration for payments, and @security-audit for hardening.
 ```
 
@@ -169,6 +178,7 @@ I'm building a SaaS application. Use @brainstorming for the MVP plan,
 Pre-curated skill collections optimized for common Kiro use cases:
 
 ### AWS Developer Bundle
+
 - `@aws-serverless`
 - `@aws-cdk`
 - `@aws-sam`
@@ -177,6 +187,7 @@ Pre-curated skill collections optimized for common Kiro use cases:
 - `@api-gateway-patterns`
 
 ### Full-Stack AWS Bundle
+
 - `@aws-serverless`
 - `@react-patterns`
 - `@typescript-expert`
@@ -185,6 +196,7 @@ Pre-curated skill collections optimized for common Kiro use cases:
 - `@ci-cd-pipeline`
 
 ### DevOps & Infrastructure Bundle
+
 - `@terraform-expert`
 - `@docker-expert`
 - `@kubernetes-expert`
@@ -238,8 +250,8 @@ chmod -R 755 ~/.kiro/skills/
 ```
 I need to build a REST API for a todo application using AWS Lambda and DynamoDB.
 
-Use @brainstorming to design the architecture, then apply @aws-serverless 
-to implement the Lambda functions, @dynamodb-patterns for data modeling, 
+Use @brainstorming to design the architecture, then apply @aws-serverless
+to implement the Lambda functions, @dynamodb-patterns for data modeling,
 and @api-security-best-practices for security hardening.
 
 Generate the infrastructure using @aws-cdk and add tests with @test-driven-development.
@@ -250,8 +262,8 @@ Generate the infrastructure using @aws-cdk and add tests with @test-driven-devel
 ```
 I want to break down this monolithic application into microservices.
 
-Use @architecture to create an ADR for the migration strategy, 
-apply @microservices-patterns for service boundaries, 
+Use @architecture to create an ADR for the migration strategy,
+apply @microservices-patterns for service boundaries,
 @docker-expert for containerization, and @kubernetes-expert for orchestration.
 
 Document the migration plan with @documentation.
@@ -262,8 +274,8 @@ Document the migration plan with @documentation.
 ```
 Perform a comprehensive security audit of this application.
 
-Use @security-audit to scan for vulnerabilities, @owasp-top-10 to check 
-for common issues, @api-security-best-practices for API hardening, 
+Use @security-audit to scan for vulnerabilities, @owasp-top-10 to check
+for common issues, @api-security-best-practices for API hardening,
 and @aws-security-best-practices for cloud configuration.
 
 Generate a report with findings and remediation steps.
