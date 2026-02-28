@@ -2,7 +2,7 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 950
+Total skills: 954
 
 ## architecture (61)
 
@@ -70,7 +70,7 @@ Total skills: 950
 | `workflow-patterns` |  |  |  |
 | `zapier-make-patterns` | No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) let non-developers automate business processes without writing code.... | zapier, make | zapier, make, no, code, automation, democratizes, building, formerly, integromat, let, non, developers |
 
-## business (43)
+## business (44)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -78,6 +78,7 @@ Total skills: 950
 | `competitor-alternatives` | When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'v... | competitor, alternatives | competitor, alternatives, user, wants, comparison, alternative, pages, seo, sales, enablement, mentions, page |
 | `content-creator` | Create SEO-optimized marketing content with consistent brand voice. Includes brand voice analyzer, SEO optimizer, content frameworks, and social media templa... | content, creator | content, creator, seo, optimized, marketing, consistent, brand, voice, includes, analyzer, optimizer, frameworks |
 | `copy-editing` | When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,'... | copy, editing | copy, editing, user, wants, edit, review, improve, existing, marketing, mentions, my, feedback |
+| `copywriting` | Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules. | copywriting | copywriting, write, rigorous, conversion, marketing, copy, landing, pages, emails, enforces, brief, confirmation |
 | `customer-support` |  | customer, support | customer, support |
 | `deep-research` | Execute autonomous multi-step research using Google Gemini Deep Research Agent. Use for: market analysis, competitive landscaping, literature reviews, techni... | deep, research | deep, research, execute, autonomous, multi, step, google, gemini, agent, market, analysis, competitive |
 | `defi-protocol-templates` | Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems. Use when building decentralized finance applicat... | defi, protocol | defi, protocol, protocols, staking, amms, governance, lending, building, decentralized, finance, applications, smart |
@@ -118,7 +119,7 @@ Total skills: 950
 | `startup-metrics-framework` |  | startup, metrics, framework | startup, metrics, framework |
 | `whatsapp-automation` | Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates, upload media, and handle contacts. Always search tools first for c... | whatsapp | whatsapp, automation, automate, business, tasks, via, rube, mcp, composio, send, messages, upload |
 
-## data-ai (148)
+## data-ai (150)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -264,6 +265,8 @@ Total skills: 950
 | `vector-database-engineer` | Expert in vector databases, embedding strategies, and semantic search implementation. Masters Pinecone, Weaviate, Qdrant, Milvus, and pgvector for RAG applic... | vector, database | vector, database, engineer, databases, embedding, semantic, search, masters, pinecone, weaviate, qdrant, milvus |
 | `vector-index-tuning` | Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW parameters, selecting quantization strategies, or scaling vector sear... | vector, index, tuning | vector, index, tuning, optimize, performance, latency, recall, memory, hnsw, parameters, selecting, quantization |
 | `vexor` | Vector-powered CLI for semantic file search with a Claude/Codex skill | vexor | vexor, vector, powered, cli, semantic, file, search, claude, codex, skill |
+| `vibe-code-auditor` | Audit rapidly generated or AI-produced code for structural flaws, fragility, and production risks. | vibe, code, auditor | vibe, code, auditor, audit, rapidly, generated, ai, produced, structural, flaws, fragility, risks |
+| `videodb-skills` | Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK. | [video, editing, transcription, subtitles, search, streaming, ai-generation, media] | [video, editing, transcription, subtitles, search, streaming, ai-generation, media], videodb, skills, upload, stream |
 | `voice-agents` | Voice agents represent the frontier of AI interaction - humans speaking naturally with AI systems. The challenge isn't just speech recognition and synthesis,... | voice, agents | voice, agents, represent, frontier, ai, interaction, humans, speaking, naturally, challenge, isn, just |
 | `voice-ai-development` | Expert in building voice AI applications - from real-time voice agents to voice-enabled apps. Covers OpenAI Realtime API, Vapi for voice agents, Deepgram for... | voice, ai | voice, ai, development, building, applications, real, time, agents, enabled, apps, covers, openai |
 | `voice-ai-engine-development` | Build real-time conversational AI voice engines using async worker pipelines, streaming transcription, LLM agents, and TTS synthesis with interrupt handling ... | voice, ai, engine | voice, ai, engine, development, real, time, conversational, engines, async, worker, pipelines, streaming |
@@ -271,13 +274,14 @@ Total skills: 950
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 | `youtube-automation` | Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search content, get analytics, and handle comments. Always search tools firs... | youtube | youtube, automation, automate, tasks, via, rube, mcp, composio, upload, videos, playlists, search |
 
-## development (149)
+## development (150)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
 | `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |
 | `algolia-search` | Expert patterns for Algolia search implementation, indexing strategies, React InstantSearch, and relevance tuning Use when: adding search to, algolia, instan... | algolia, search | algolia, search, indexing, react, instantsearch, relevance, tuning, adding, api, functionality |
 | `android-jetpack-compose-expert` | Expert guidance for building modern Android UIs with Jetpack Compose, covering state management, navigation, performance, and Material Design 3. | android, jetpack, compose | android, jetpack, compose, guidance, building, uis, covering, state, navigation, performance, material |
+| `android_ui_verification` | Automated end-to-end UI testing and verification on an Android Emulator using ADB. | android_ui_verification | android_ui_verification, android, ui, verification, automated, testing, emulator, adb |
 | `api-design-principles` | Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, revie... | api, principles | api, principles, rest, graphql, intuitive, scalable, maintainable, apis, delight, developers, designing, new |
 | `api-documentation` | API documentation workflow for generating OpenAPI specs, creating developer guides, and maintaining comprehensive API documentation. | api, documentation | api, documentation, generating, openapi, specs, creating, developer, guides, maintaining |
 | `api-documentation-generator` | Generate comprehensive, developer-friendly API documentation from code, including endpoints, parameters, examples, and best practices | api, documentation, generator | api, documentation, generator, generate, developer, friendly, code, including, endpoints, parameters, examples |
@@ -511,7 +515,6 @@ Total skills: 950
 | `context-management-context-save` | Use when working with context management context save | save | save, context, working |
 | `context-manager` |  | manager | manager, context |
 | `context-optimization` | Apply compaction, masking, and caching strategies | optimization | optimization, context, apply, compaction, masking, caching |
-| `copywriting` |  | copywriting | copywriting |
 | `cpp-pro` |  | cpp | cpp, pro |
 | `create-pr` | Create pull requests following Sentry conventions. Use when opening PRs, writing PR descriptions, or preparing changes for review. Follows Sentry's code revi... | create, pr | create, pr, pull, requests, following, sentry, conventions, opening, prs, writing, descriptions, preparing |
 | `crypto-bd-agent` |  | crypto, bd, agent | crypto, bd, agent |
@@ -558,6 +561,7 @@ Total skills: 950
 | `godot-4-migration` | Specialized guide for migrating Godot 3.x projects to Godot 4 (GDScript 2.0), covering syntax changes, Tweens, and exports. | godot, 4, migration | godot, 4, migration, specialized, migrating, gdscript, covering, syntax, changes, tweens, exports |
 | `graphql-architect` |  | graphql | graphql, architect |
 | `haskell-pro` | Expert Haskell engineer specializing in advanced type systems, pure | haskell | haskell, pro, engineer, specializing, type, pure |
+| `hierarchical-agent-memory` | Scoped CLAUDE.md memory system that reduces context token spend. Creates directory-level context files, tracks savings via dashboard, and routes agents to th... | hierarchical, agent, memory | hierarchical, agent, memory, scoped, claude, md, reduces, context, token, spend, creates, directory |
 | `hig-components-content` |  | hig, components, content | hig, components, content |
 | `hig-components-controls` |  | hig, components, controls | hig, components, controls |
 | `hig-components-dialogs` |  | hig, components, dialogs | hig, components, dialogs |

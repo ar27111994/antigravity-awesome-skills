@@ -7,6 +7,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [6.6.0] - 2026-02-28 - "Community Skills & Quality"
+
+> **New skills for Android UI verification, memory handling, video manipulation, vibe-code auditing, and essential fixes.**
+
+This release integrates major community contributions, adding skills for Android testing, scoped agent memory, vibe-code quality auditing, and the VideoDB SDK. It also addresses issues with skill metadata validation and enhances documentation consistency.
+
+## 🚀 New Skills
+
+### 📱 [android_ui_verification](skills/android_ui_verification/)
+
+**Automated end-to-end UI testing on Android Emulators.**
+Test layout issues, check state verification, and capture screenshots right from ADB.
+
+### 🧠 [hierarchical-agent-memory](skills/hierarchical-agent-memory/)
+
+**Scoped CLAUDE.md memory system.**
+Directory-level context files with a dashboard, significantly reducing token spend on repetitive queries.
+
+### 🎥 [videodb-skills](skills/videodb-skills/)
+
+**The ultimate Video processing toolkit.**
+Upload, stream, search, edit, transcribe, and generate AI video/audio using the VideoDB SDK.
+
+### 🕵️ [vibe-code-auditor](skills/vibe-code-auditor/)
+
+**AI-code specific quality assessments.**
+Check prototypes and generated code for structural flaws, hidden technical debt, and production risks.
+
+---
+
+## 📦 Improvements
+
+- **Skill Validation Fixes**: Corrected invalid description lengths and `risk` fields in `copywriting`, `videodb-skills`, and `vibe-code-auditor`. (Fixes #157, #158)
+- **Documentation**: New dedicated `docs/SEC_SKILLS.md` indexing all 128 security skills.
+- **README Quality**: Cleaned up inconsistencies, deduplicated lists, updated stats (954+ total skills).
+
+## 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **@alexmvie** for `android_ui_verification`
+- **@talesperito** for `vibe-code-auditor`
+- **@djmahe4** for `docs/SEC_SKILLS.md`
+- **@kromahlusenii-ops** for `hierarchical-agent-memory`
+- **@0xrohitgarg** for `videodb-skills`
+- **@nedcodes-ok** for `rule-porter` addition
+- **@acbhatt12** for `README.md` improvements (PR #162)
+
+---
+
 ## [6.5.0] - 2026-02-27 - "Community & Experience"
 
 > **Major UX upgrade: Stars feature, auto-updates, interactive prompts, and complete date tracking for all 950+ skills.**

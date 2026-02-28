@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 950,
+  "total": 954,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -758,6 +758,26 @@
         "material"
       ],
       "path": "skills/android-jetpack-compose-expert/SKILL.md"
+    },
+    {
+      "id": "android_ui_verification",
+      "name": "android_ui_verification",
+      "description": "Automated end-to-end UI testing and verification on an Android Emulator using ADB.",
+      "category": "development",
+      "tags": [
+        "android_ui_verification"
+      ],
+      "triggers": [
+        "android_ui_verification",
+        "android",
+        "ui",
+        "verification",
+        "automated",
+        "testing",
+        "emulator",
+        "adb"
+      ],
+      "path": "skills/android_ui_verification/SKILL.md"
     },
     {
       "id": "angular",
@@ -7000,13 +7020,24 @@
     {
       "id": "copywriting",
       "name": "copywriting",
-      "description": "",
-      "category": "general",
+      "description": "Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.",
+      "category": "business",
       "tags": [
         "copywriting"
       ],
       "triggers": [
-        "copywriting"
+        "copywriting",
+        "write",
+        "rigorous",
+        "conversion",
+        "marketing",
+        "copy",
+        "landing",
+        "pages",
+        "emails",
+        "enforces",
+        "brief",
+        "confirmation"
       ],
       "path": "skills/copywriting/SKILL.md"
     },
@@ -11082,6 +11113,32 @@
         "canned"
       ],
       "path": "skills/helpdesk-automation/SKILL.md"
+    },
+    {
+      "id": "hierarchical-agent-memory",
+      "name": "hierarchical-agent-memory",
+      "description": "Scoped CLAUDE.md memory system that reduces context token spend. Creates directory-level context files, tracks savings via dashboard, and routes agents to the right sub-context.",
+      "category": "general",
+      "tags": [
+        "hierarchical",
+        "agent",
+        "memory"
+      ],
+      "triggers": [
+        "hierarchical",
+        "agent",
+        "memory",
+        "scoped",
+        "claude",
+        "md",
+        "reduces",
+        "context",
+        "token",
+        "spend",
+        "creates",
+        "directory"
+      ],
+      "path": "skills/hierarchical-agent-memory/SKILL.md"
     },
     {
       "id": "hig-components-content",
@@ -20343,6 +20400,63 @@
         "skill"
       ],
       "path": "skills/vexor/SKILL.md"
+    },
+    {
+      "id": "vibe-code-auditor",
+      "name": "vibe-code-auditor",
+      "description": "Audit rapidly generated or AI-produced code for structural flaws, fragility, and production risks.",
+      "category": "data-ai",
+      "tags": [
+        "vibe",
+        "code",
+        "auditor"
+      ],
+      "triggers": [
+        "vibe",
+        "code",
+        "auditor",
+        "audit",
+        "rapidly",
+        "generated",
+        "ai",
+        "produced",
+        "structural",
+        "flaws",
+        "fragility",
+        "risks"
+      ],
+      "path": "skills/vibe-code-auditor/SKILL.md"
+    },
+    {
+      "id": "videodb-skills",
+      "name": "videodb-skills",
+      "description": "Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK.",
+      "category": "data-ai",
+      "tags": [
+        "[video",
+        "editing",
+        "transcription",
+        "subtitles",
+        "search",
+        "streaming",
+        "ai-generation",
+        "media]"
+      ],
+      "triggers": [
+        "[video",
+        "editing",
+        "transcription",
+        "subtitles",
+        "search",
+        "streaming",
+        "ai-generation",
+        "media]",
+        "videodb",
+        "skills",
+        "upload",
+        "stream"
+      ],
+      "path": "skills/videodb-skills/SKILL.md"
     },
     {
       "id": "viral-generator-builder",

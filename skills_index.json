@@ -330,6 +330,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "android_ui_verification",
+    "path": "skills/android_ui_verification",
+    "category": "uncategorized",
+    "name": "android_ui_verification",
+    "description": "Automated end-to-end UI testing and verification on an Android Emulator using ADB.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null
+  },
+  {
     "id": "angular",
     "path": "skills/angular",
     "category": "uncategorized",
@@ -3184,7 +3194,7 @@
     "path": "skills/copywriting",
     "category": "uncategorized",
     "name": "copywriting",
-    "description": "Produce **clear, credible, and action-oriented marketing copy** that aligns with user intent and business goals.",
+    "description": "Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.",
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
@@ -4927,6 +4937,16 @@
     "description": "Automate HelpDesk tasks via Rube MCP (Composio): list tickets, manage views, use canned responses, and configure custom fields. Always search tools first for current schemas.",
     "risk": "unknown",
     "source": "community",
+    "date_added": "2026-02-27"
+  },
+  {
+    "id": "hierarchical-agent-memory",
+    "path": "skills/hierarchical-agent-memory",
+    "category": "uncategorized",
+    "name": "hierarchical-agent-memory",
+    "description": "Scoped CLAUDE.md memory system that reduces context token spend. Creates directory-level context files, tracks savings via dashboard, and routes agents to the right sub-context.",
+    "risk": "safe",
+    "source": "https://github.com/kromahlusenii-ops/ham",
     "date_added": "2026-02-27"
   },
   {
@@ -9027,6 +9047,26 @@
     "description": "Vector-powered CLI for semantic file search with a Claude/Codex skill",
     "risk": "safe",
     "source": "https://github.com/scarletkc/vexor",
+    "date_added": "2026-02-27"
+  },
+  {
+    "id": "vibe-code-auditor",
+    "path": "skills/vibe-code-auditor",
+    "category": "uncategorized",
+    "name": "vibe-code-auditor",
+    "description": "Audit rapidly generated or AI-produced code for structural flaws, fragility, and production risks.",
+    "risk": "safe",
+    "source": "original",
+    "date_added": null
+  },
+  {
+    "id": "videodb-skills",
+    "path": "skills/videodb-skills",
+    "category": "media",
+    "name": "videodb-skills",
+    "description": "Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK.",
+    "risk": "safe",
+    "source": "community",
     "date_added": "2026-02-27"
   },
   {
