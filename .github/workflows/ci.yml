@@ -50,6 +50,8 @@ jobs:
         continue-on-error: true
 
       - name: Run tests
+        env:
+          ENABLE_NETWORK_TESTS: "1"
         run: npm run test
 
       - name: 📦 Build catalog

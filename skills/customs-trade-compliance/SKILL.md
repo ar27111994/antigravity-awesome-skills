@@ -1,9 +1,9 @@
 ---
 name: customs-trade-compliance
-description: >
+description: Codified expertise for customs documentation, tariff classification, duty optimisation, restricted party screening, and regulatory compliance across multiple jurisdictions.
 risk: safe
-source: "https://github.com/ai-evos/agent-skills"
-date_added: "2026-02-27"
+source: https://github.com/ai-evos/agent-skills
+date_added: '2026-02-27'
 ---
 
 ## When to Use

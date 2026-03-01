@@ -1,9 +1,9 @@
 ---
 name: c4-container
-description: |
+description: Expert C4 Container-level documentation specialist.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # C4 Container Level: System Deployment

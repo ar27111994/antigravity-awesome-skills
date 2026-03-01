@@ -1,9 +1,9 @@
 ---
 name: firmware-analyst
-description: |
+description: Expert firmware analyst specializing in embedded systems, IoT security, and hardware reverse engineering.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Download from vendor

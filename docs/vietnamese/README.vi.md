@@ -30,7 +30,7 @@
 Các trợ lý AI (như Claude Code, Cursor, hoặc Gemini) rất thông minh, nhưng chúng thiếu các **công cụ chuyên biệt**. Chúng không biết "Quy trình Triển khai" của công ty bạn hoặc cú pháp cụ thể cho "AWS CloudFormation".  
 **Skills** là các tệp markdown nhỏ dạy cho chúng cách thực hiện những tác vụ cụ thể này một cách chính xác trong mọi lần thực thi.
 ...
-Repository này cung cấp các kỹ năng thiết yếu để biến trợ lý AI của bạn thành một **đội ngũ chuyên gia số toàn năng**, bao gồm các khả năng chính thức từ **Anthropic**, **OpenAI**, **Google**, **Supabase**, và **Vercel Labs**.
+Repository này cung cấp các kỹ năng thiết yếu để biến trợ lý AI của bạn thành một **đội ngũ chuyên gia số toàn năng**, bao gồm các khả năng chính thức từ **Anthropic**, **OpenAI**, **Google**, **Supabase**, **Apify**, và **Vercel Labs**.
 ...
 Cho dù bạn đang sử dụng **Gemini CLI**, **Claude Code**, **Codex CLI**, **Cursor**, **GitHub Copilot**, **Antigravity**, hay **OpenCode**, những kỹ năng này được thiết kế để có thể sử dụng ngay lập tức và tăng cường sức mạnh cho trợ lý AI của bạn.
 
@@ -40,17 +40,17 @@ Repository này tập hợp những khả năng tốt nhất từ khắp cộng 
 
 Repository được tổ chức thành các lĩnh vực chuyên biệt để biến AI của bạn thành một chuyên gia trên toàn bộ vòng đời phát triển phần mềm:
 
-| Danh mục | Trọng tâm | Ví dụ kỹ năng |
-| :--- | :--- | :--- |
-| Kiến trúc (52) | Thiết kế hệ thống, ADRs, C4 và các mẫu có thể mở rộng | `architecture`, `c4-context`, `senior-architect` |
-| Kinh doanh (35) | Tăng trưởng, định giá, CRO, SEO và thâm nhập thị trường | `copywriting`, `pricing-strategy`, `seo-audit` |
-| Dữ liệu & AI (81) | Ứng dụng LLM, RAG, agents, khả năng quan sát, phân tích | `rag-engineer`, `prompt-engineer`, `langgraph` |
-| Phát triển (72) | Làm chủ ngôn ngữ, mẫu thiết kế framework, chất lượng code | `typescript-expert`, `python-patterns`, `react-patterns` |
-| Tổng quát (95) | Lập kế hoạch, tài liệu, vận hành sản phẩm, viết bài, hướng dẫn | `brainstorming`, `doc-coauthoring`, `writing-plans` |
-| Hạ tầng (72) | DevOps, cloud, serverless, triển khai, CI/CD | `docker-expert`, `aws-serverless`, `vercel-deployment` |
-| Bảo mật (107) | AppSec, pentesting, phân tích lỗ hổng, tuân thủ | `api-security-best-practices`, `sql-injection-testing`, `vulnerability-scanner` |
-| Kiểm thử (21) | TDD, thiết kế kiểm thử, sửa lỗi, quy trình QA | `test-driven-development`, `testing-patterns`, `test-fixing` |
-| Quy trình (17) | Tự động hóa, điều phối, công việc, agents | `workflow-automation`, `inngest`, `trigger-dev` |
+| Danh mục          | Trọng tâm                                                      | Ví dụ kỹ năng                                                                   |
+| :---------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| Kiến trúc (52)    | Thiết kế hệ thống, ADRs, C4 và các mẫu có thể mở rộng          | `architecture`, `c4-context`, `senior-architect`                                |
+| Kinh doanh (35)   | Tăng trưởng, định giá, CRO, SEO và thâm nhập thị trường        | `copywriting`, `pricing-strategy`, `seo-audit`                                  |
+| Dữ liệu & AI (81) | Ứng dụng LLM, RAG, agents, khả năng quan sát, phân tích        | `rag-engineer`, `prompt-engineer`, `langgraph`                                  |
+| Phát triển (72)   | Làm chủ ngôn ngữ, mẫu thiết kế framework, chất lượng code      | `typescript-expert`, `python-patterns`, `react-patterns`                        |
+| Tổng quát (95)    | Lập kế hoạch, tài liệu, vận hành sản phẩm, viết bài, hướng dẫn | `brainstorming`, `doc-coauthoring`, `writing-plans`                             |
+| Hạ tầng (72)      | DevOps, cloud, serverless, triển khai, CI/CD                   | `docker-expert`, `aws-serverless`, `vercel-deployment`                          |
+| Bảo mật (107)     | AppSec, pentesting, phân tích lỗ hổng, tuân thủ                | `api-security-best-practices`, `sql-injection-testing`, `vulnerability-scanner` |
+| Kiểm thử (21)     | TDD, thiết kế kiểm thử, sửa lỗi, quy trình QA                  | `test-driven-development`, `testing-patterns`, `test-fixing`                    |
+| Quy trình (17)    | Tự động hóa, điều phối, công việc, agents                      | `workflow-automation`, `inngest`, `trigger-dev`                                 |
 
 ## Bộ sưu tập Tuyển chọn
 
@@ -119,6 +119,7 @@ Bộ sưu tập này sẽ không thể hình thành nếu không có công việ
 - **[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)**: Skills chính thức của Vercel Labs - Thực hành tốt nhất cho React, Hướng dẫn thiết kế Web.
 - **[openai/skills](https://github.com/openai/skills)**: Danh mục skill của OpenAI Codex - Các kỹ năng của Agent, Trình tạo Skill, Lập kế hoạch Súc tích.
 - **[supabase/agent-skills](https://github.com/supabase/agent-skills)**: Skills chính thức của Supabase - Thực hành tốt nhất cho Postgres.
+- **[apify/agent-skills](https://github.com/apify/agent-skills)**: Skills chính thức của Apify - Web scraping, data extraction and automation.
 
 ### Những người đóng góp từ Cộng đồng
 

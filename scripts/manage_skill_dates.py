@@ -26,45 +26,39 @@ def get_project_root():
     """Get the project root directory."""
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+import yaml
+
 def parse_frontmatter(content):
-    """Parse frontmatter from SKILL.md content."""
+    """Parse frontmatter from SKILL.md content using PyYAML."""
     fm_match = re.search(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
     if not fm_match:
         return None, content
     
     fm_text = fm_match.group(1)
-    metadata = {}
-    for line in fm_text.split('\n'):
-        if ':' in line and not line.strip().startswith('#'):
-            key, val = line.split(':', 1)
-            metadata[key.strip()] = val.strip().strip('"').strip("'")
-    
-    return metadata, content
+    try:
+        metadata = yaml.safe_load(fm_text) or {}
+        return metadata, content
+    except yaml.YAMLError as e:
+        print(f"⚠️ YAML parsing error: {e}")
+        return None, content
 
 def reconstruct_frontmatter(metadata):
-    """Reconstruct frontmatter from metadata dict."""
-    lines = ["---"]
-    
-    # Order: id, name, description, category, risk, source, tags, date_added
-    priority_keys = ['id', 'name', 'description', 'category', 'risk', 'source', 'tags']
+    """Reconstruct frontmatter from metadata dict using PyYAML."""
+    # Ensure important keys are at the top if they exist
+    ordered = {}
+    priority_keys = ['id', 'name', 'description', 'category', 'risk', 'source', 'tags', 'date_added']
     
     for key in priority_keys:
         if key in metadata:
-            val = metadata[key]
-            if isinstance(val, list):
-                # Handle list fields like tags
-                lines.append(f'{key}: {val}')
-            elif ' ' in str(val) or any(c in str(val) for c in ':#"'):
-                lines.append(f'{key}: "{val}"')
-            else:
-                lines.append(f'{key}: {val}')
+            ordered[key] = metadata[key]
     
-    # Add date_added at the end
-    if 'date_added' in metadata:
-        lines.append(f'date_added: "{metadata["date_added"]}"')
-    
-    lines.append("---")
-    return '\n'.join(lines)
+    # Add any remaining keys
+    for key, value in metadata.items():
+        if key not in ordered:
+            ordered[key] = value
+            
+    fm_text = yaml.dump(ordered, sort_keys=False, allow_unicode=True, width=1000).strip()
+    return f"---\n{fm_text}\n---"
 
 def update_skill_frontmatter(skill_path, metadata):
     """Update a skill's frontmatter with new metadata."""

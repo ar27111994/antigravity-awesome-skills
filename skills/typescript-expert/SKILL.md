@@ -1,10 +1,10 @@
 ---
 name: typescript-expert
-description: >-
+description: TypeScript and JavaScript expert with deep knowledge of type-level programming, performance optimization, monorepo management, migration strategies, and modern tooling.
 category: framework
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # TypeScript Expert

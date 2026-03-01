@@ -18,20 +18,19 @@ def get_project_root():
     """Get the project root directory."""
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+import yaml
+
 def parse_frontmatter(content):
-    """Parse frontmatter from SKILL.md content."""
+    """Parse frontmatter from SKILL.md content using PyYAML."""
     fm_match = re.search(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
     if not fm_match:
         return None
     
     fm_text = fm_match.group(1)
-    metadata = {}
-    for line in fm_text.split('\n'):
-        if ':' in line and not line.strip().startswith('#'):
-            key, val = line.split(':', 1)
-            metadata[key.strip()] = val.strip().strip('"').strip("'")
-    
-    return metadata
+    try:
+        return yaml.safe_load(fm_text) or {}
+    except yaml.YAMLError:
+        return None
 
 def generate_skills_report(output_file=None, sort_by='date'):
     """Generate a report of all skills with their metadata."""

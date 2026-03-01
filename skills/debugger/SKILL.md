@@ -1,9 +1,13 @@
 ---
 name: debugger
-description: |
+description: 'Debugging specialist for errors, test failures, and unexpected
+
+  behavior. Use proactively when encountering any issues.
+
+  '
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 ## Use this skill when

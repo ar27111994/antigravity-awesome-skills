@@ -5,11 +5,59 @@ Shows the repository layout, skill locations, and what flat names would be gener
 """
 
 import re
+import io
+import shutil
 import subprocess
+import sys
 import tempfile
+import traceback
+import uuid
 from pathlib import Path
 
 MS_REPO = "https://github.com/microsoft/skills.git"
+
+
+def create_clone_target(prefix: str) -> Path:
+    """Return a writable, non-existent path for git clone destination."""
+    repo_tmp_root = Path(__file__).resolve().parents[2] / ".tmp" / "tests"
+    candidate_roots = (repo_tmp_root, Path(tempfile.gettempdir()))
+    last_error: OSError | None = None
+
+    for root in candidate_roots:
+        try:
+            root.mkdir(parents=True, exist_ok=True)
+            probe_file = root / f".{prefix}write-probe-{uuid.uuid4().hex}.tmp"
+            with probe_file.open("xb"):
+                pass
+            probe_file.unlink()
+            return root / f"{prefix}{uuid.uuid4().hex}"
+        except OSError as exc:
+            last_error = exc
+
+    if last_error is not None:
+        raise last_error
+    raise OSError("Unable to determine clone destination")
+
+
+def configure_utf8_output() -> None:
+    """Best-effort UTF-8 stdout/stderr on Windows without dropping diagnostics."""
+    for stream_name in ("stdout", "stderr"):
+        stream = getattr(sys, stream_name)
+        try:
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
+            continue
+        except Exception:
+            pass
+
+        buffer = getattr(stream, "buffer", None)
+        if buffer is not None:
+            setattr(
+                sys,
+                stream_name,
+                io.TextIOWrapper(
+                    buffer, encoding="utf-8", errors="backslashreplace"
+                ),
+            )
 
 
 def extract_skill_name(skill_md_path: Path) -> str | None:
@@ -37,18 +85,26 @@ def inspect_repo():
     print("🔍 Inspecting Microsoft Skills Repository Structure")
     print("=" * 60)
 
-    with tempfile.TemporaryDirectory() as temp_dir:
-        temp_path = Path(temp_dir)
+    repo_path: Path | None = None
+    try:
+        repo_path = create_clone_target(prefix="ms-skills-")
 
         print("\n1️⃣ Cloning repository...")
-        subprocess.run(
-            ["git", "clone", "--depth", "1", MS_REPO, str(temp_path)],
-            check=True,
-            capture_output=True,
-        )
+        try:
+            subprocess.run(
+                ["git", "clone", "--depth", "1", MS_REPO, str(repo_path)],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as exc:
+            print("\n❌ git clone failed.", file=sys.stderr)
+            if exc.stderr:
+                print(exc.stderr.strip(), file=sys.stderr)
+            raise
 
         # Find all SKILL.md files
-        all_skill_mds = list(temp_path.rglob("SKILL.md"))
+        all_skill_mds = list(repo_path.rglob("SKILL.md"))
         print(f"\n2️⃣ Total SKILL.md files found: {len(all_skill_mds)}")
 
         # Show flat name mapping
@@ -59,7 +115,7 @@ def inspect_repo():
 
         for skill_md in sorted(all_skill_mds, key=lambda p: str(p)):
             try:
-                rel = skill_md.parent.relative_to(temp_path)
+                rel = skill_md.parent.relative_to(repo_path)
             except ValueError:
                 rel = skill_md.parent
 
@@ -87,12 +143,18 @@ def inspect_repo():
                 f"\n4️⃣ ✅ No name collisions — all {len(names_seen)} names are unique!")
 
         print("\n✨ Inspection complete!")
+    finally:
+        if repo_path is not None:
+            shutil.rmtree(repo_path, ignore_errors=True)
 
 
 if __name__ == "__main__":
+    configure_utf8_output()
     try:
         inspect_repo()
+    except subprocess.CalledProcessError as exc:
+        sys.exit(exc.returncode or 1)
     except Exception as e:
-        print(f"\n❌ Error: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"\n❌ Error: {e}", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+        sys.exit(1)

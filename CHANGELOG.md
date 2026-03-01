@@ -39,6 +39,10 @@ Check prototypes and generated code for structural flaws, hidden technical debt,
 
 ## 📦 Improvements
 
+- **Skill Description Restoration**: Recovered 223+ truncated descriptions from git history that were corrupted in release 6.5.0.
+- **Robust YAML Tooling**: Replaced fragile regex parsing with `PyYAML` across all maintenance scripts (`manage_skill_dates.py`, `validate_skills.py`, etc.) to prevent future data loss.
+- **Refined Descriptions**: Standardized all skill descriptions to be under 200 characters while maintaining grammatical correctness and functional value.
+- **Cross-Platform Index**: Normalized `skills_index.json` to use forward slashes for universal path compatibility.
 - **Skill Validation Fixes**: Corrected invalid description lengths and `risk` fields in `copywriting`, `videodb-skills`, and `vibe-code-auditor`. (Fixes #157, #158)
 - **Documentation**: New dedicated `docs/SEC_SKILLS.md` indexing all 128 security skills.
 - **README Quality**: Cleaned up inconsistencies, deduplicated lists, updated stats (954+ total skills).

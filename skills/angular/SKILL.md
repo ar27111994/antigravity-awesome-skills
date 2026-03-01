@@ -1,9 +1,9 @@
 ---
 name: angular
-description: >-
+description: Modern Angular (v20+) expert with deep knowledge of Signals, Standalone Components, Zoneless applications, SSR/Hydration, and reactive patterns.
 risk: safe
 source: self
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Angular Expert

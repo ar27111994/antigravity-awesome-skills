@@ -1,9 +1,9 @@
 ---
 name: database-admin
-description: |
+description: Expert database administrator specializing in modern cloud databases, automation, and reliability engineering.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 ## Use this skill when

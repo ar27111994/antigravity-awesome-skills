@@ -1,9 +1,9 @@
 ---
 name: azure-eventhub-rust
-description: |
+description: Azure Event Hubs SDK for Rust. Use for sending and receiving events, streaming data ingestion.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Azure Event Hubs SDK for Rust

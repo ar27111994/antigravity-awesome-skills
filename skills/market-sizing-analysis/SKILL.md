@@ -1,9 +1,9 @@
 ---
 name: market-sizing-analysis
-description: |
+description: This skill should be used when the user asks to \\\"calculate TAM\\\", "determine SAM", "estimate SOM", "size the market", "calculate market opportunity", "what's the total addressable market", or...
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Market Sizing Analysis

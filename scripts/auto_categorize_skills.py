@@ -128,8 +128,10 @@ def categorize_skill(skill_name, description):
     
     return None
 
+import yaml
+
 def auto_categorize(skills_dir, dry_run=False):
-    """Auto-categorize skills and update generate_index.py"""
+    """Auto-categorize skills and update SKILL.md files"""
     skills = []
     categorized_count = 0
     already_categorized = 0
@@ -146,17 +148,19 @@ def auto_categorize(skills_dir, dry_run=False):
                 with open(skill_path, 'r', encoding='utf-8') as f:
                     content = f.read()
                 
-                # Extract name and description from frontmatter
+                # Extract frontmatter and body
                 fm_match = re.search(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
                 if not fm_match:
                     continue
                 
                 fm_text = fm_match.group(1)
-                metadata = {}
-                for line in fm_text.split('\n'):
-                    if ':' in line and not line.strip().startswith('#'):
-                        key, val = line.split(':', 1)
-                        metadata[key.strip()] = val.strip().strip('"').strip("'")
+                body = content[fm_match.end():]
+                
+                try:
+                    metadata = yaml.safe_load(fm_text) or {}
+                except yaml.YAMLError as e:
+                    print(f"⚠️ {skill_id}: YAML error - {e}")
+                    continue
                 
                 skill_name = metadata.get('name', skill_id)
                 description = metadata.get('description', '')
@@ -186,32 +190,12 @@ def auto_categorize(skills_dir, dry_run=False):
                     })
                     
                     if not dry_run:
-                        # Update the SKILL.md file - add or replace category
-                        fm_start = content.find('---')
-                        fm_end = content.find('---', fm_start + 3)
+                        metadata['category'] = new_category
+                        new_fm = yaml.dump(metadata, sort_keys=False, allow_unicode=True, width=1000).strip()
+                        new_content = f"---\n{new_fm}\n---" + body
                         
-                        if fm_start >= 0 and fm_end > fm_start:
-                            frontmatter = content[fm_start:fm_end+3]
-                            body = content[fm_end+3:]
-                            
-                            # Check if category exists in frontmatter
-                            if 'category:' in frontmatter:
-                                # Replace existing category
-                                new_frontmatter = re.sub(
-                                    r'category:\s*\w+',
-                                    f'category: {new_category}',
-                                    frontmatter
-                                )
-                            else:
-                                # Add category before the closing ---
-                                new_frontmatter = frontmatter.replace(
-                                    '\n---',
-                                    f'\ncategory: {new_category}\n---'
-                                )
-                            
-                            new_content = new_frontmatter + body
-                            with open(skill_path, 'w', encoding='utf-8') as f:
-                                f.write(new_content)
+                        with open(skill_path, 'w', encoding='utf-8') as f:
+                            f.write(new_content)
                     
                     categorized_count += 1
                 else:

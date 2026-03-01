@@ -7,6 +7,7 @@
     "agent-orchestration-optimize": "agent-orchestration-multi-agent-optimize",
     "android-jetpack-expert": "android-jetpack-compose-expert",
     "api-testing-mock": "api-testing-observability-api-mock",
+    "apify-brand-monitoring": "apify-brand-reputation-monitoring",
     "templates": "app-builder/templates",
     "application-performance-optimization": "application-performance-performance-optimization",
     "azure-ai-dotnet": "azure-ai-agents-persistent-dotnet",

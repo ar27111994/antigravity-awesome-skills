@@ -1,9 +1,9 @@
 ---
 name: seo-audit
-description: >
+description: Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # SEO Audit

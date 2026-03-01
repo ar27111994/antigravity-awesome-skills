@@ -1,9 +1,9 @@
 ---
 name: hig-foundations
-description: >
+description: Apple Human Interface Guidelines design foundations.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Apple HIG: Design Foundations

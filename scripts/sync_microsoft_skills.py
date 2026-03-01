@@ -59,8 +59,10 @@ def cleanup_previous_sync():
     return removed_count
 
 
+import yaml
+
 def extract_skill_name(skill_md_path: Path) -> str | None:
-    """Extract the 'name' field from SKILL.md YAML frontmatter."""
+    """Extract the 'name' field from SKILL.md YAML frontmatter using PyYAML."""
     try:
         content = skill_md_path.read_text(encoding="utf-8")
     except Exception:
@@ -70,13 +72,11 @@ def extract_skill_name(skill_md_path: Path) -> str | None:
     if not fm_match:
         return None
 
-    for line in fm_match.group(1).splitlines():
-        match = re.match(r"^name:\s*(.+)$", line)
-        if match:
-            value = match.group(1).strip().strip("\"'")
-            if value:
-                return value
-    return None
+    try:
+        data = yaml.safe_load(fm_match.group(1)) or {}
+        return data.get('name')
+    except Exception:
+        return None
 
 
 def generate_fallback_name(relative_path: Path) -> str:

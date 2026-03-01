@@ -59,9 +59,11 @@ def generate_index(skills_dir, output_file):
             parent_dir = os.path.basename(os.path.dirname(root))
             
             # Default values
+            rel_path = os.path.relpath(root, os.path.dirname(skills_dir))
+            # Force forward slashes for cross-platform JSON compatibility
             skill_info = {
                 "id": dir_name,
-                "path": os.path.relpath(root, os.path.dirname(skills_dir)),
+                "path": rel_path.replace(os.sep, '/'),
                 "category": parent_dir if parent_dir != "skills" else None,  # Will be overridden by frontmatter if present
                 "name": dir_name.replace("-", " ").title(),
                 "description": "",
@@ -117,7 +119,7 @@ def generate_index(skills_dir, output_file):
     # Sort validation: by name
     skills.sort(key=lambda x: (x["name"].lower(), x["id"].lower()))
 
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(skills, f, indent=2)
     
     print(f"✅ Generated rich index with {len(skills)} skills at: {output_file}")

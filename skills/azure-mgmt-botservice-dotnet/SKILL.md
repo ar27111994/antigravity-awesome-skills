@@ -1,9 +1,9 @@
 ---
 name: azure-mgmt-botservice-dotnet
-description: |
+description: Azure Resource Manager SDK for Bot Service in .NET. Management plane operations for creating and managing Azure Bot resources, channels (Teams, DirectLine, Slack), and connection settings.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Azure.ResourceManager.BotService (.NET)

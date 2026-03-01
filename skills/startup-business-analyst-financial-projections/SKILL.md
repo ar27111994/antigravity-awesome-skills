@@ -1,9 +1,13 @@
 ---
 name: startup-business-analyst-financial-projections
-description: |
+description: 'Create detailed 3-5 year financial model with revenue, costs, cash
+
+  flow, and scenarios
+
+  '
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
 ---
 
 # Financial Projections

@@ -14,6 +14,9 @@ const ALLOWED_FIELDS = new Set([
   'compatibility',
   'metadata',
   'allowed-tools',
+  'date_added',
+  'category',
+  'id',
 ]);
 
 function isPlainObject(value) {
@@ -122,7 +125,8 @@ function normalizeSkill(skillId) {
   if (!modified) return false;
 
   const ordered = {};
-  for (const key of ['name', 'description', 'license', 'compatibility', 'allowed-tools', 'metadata']) {
+  const order = ['id', 'name', 'description', 'category', 'risk', 'source', 'license', 'compatibility', 'date_added', 'allowed-tools', 'metadata'];
+  for (const key of order) {
     if (updated[key] !== undefined) {
       ordered[key] = updated[key];
     }

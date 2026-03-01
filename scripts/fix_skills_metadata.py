@@ -1,5 +1,6 @@
 import os
 import re
+import yaml
 
 def fix_skills(skills_dir):
     for root, dirs, files in os.walk(skills_dir):
@@ -14,33 +15,31 @@ def fix_skills(skills_dir):
                 continue
             
             fm_text = fm_match.group(1)
+            body = content[fm_match.end():]
             folder_name = os.path.basename(root)
-            new_fm_lines = []
+            
+            try:
+                metadata = yaml.safe_load(fm_text) or {}
+            except yaml.YAMLError as e:
+                print(f"⚠️ {skill_path}: YAML error - {e}")
+                continue
+
             changed = False
             
-            for line in fm_text.split('\n'):
-                if line.startswith('name:'):
-                    old_name = line.split(':', 1)[1].strip().strip('"').strip("'")
-                    if old_name != folder_name:
-                        new_fm_lines.append(f"name: {folder_name}")
-                        changed = True
-                    else:
-                        new_fm_lines.append(line)
-                elif line.startswith('description:'):
-                    desc = line.split(':', 1)[1].strip().strip('"').strip("'")
-                    if len(desc) > 200:
-                        # trim to 197 chars and add "..."
-                        short_desc = desc[:197] + "..."
-                        new_fm_lines.append(f'description: "{short_desc}"')
-                        changed = True
-                    else:
-                        new_fm_lines.append(line)
-                else:
-                    new_fm_lines.append(line)
+            # 1. Fix Name
+            if metadata.get('name') != folder_name:
+                metadata['name'] = folder_name
+                changed = True
+            
+            # 2. Fix Description length
+            desc = metadata.get('description', '')
+            if isinstance(desc, str) and len(desc) > 200:
+                metadata['description'] = desc[:197] + "..."
+                changed = True
             
             if changed:
-                new_fm_text = '\n'.join(new_fm_lines)
-                new_content = content[:fm_match.start(1)] + new_fm_text + content[fm_match.end(1):]
+                new_fm = yaml.dump(metadata, sort_keys=False, allow_unicode=True, width=1000).strip()
+                new_content = f"---\n{new_fm}\n---" + body
                 with open(skill_path, 'w', encoding='utf-8') as f:
                     f.write(new_content)
                 print(f"Fixed {skill_path}")
